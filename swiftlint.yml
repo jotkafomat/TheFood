@@ -1,0 +1,99 @@
+disabled_rules:
+ - private_over_fileprivate
+ 
+opt_in_rules:
+ # idiomatic
+ - convenience_type
+ - discouraged_object_literal
+ - discouraged_optional_boolean
+ - discouraged_optional_collection
+ - explicit_init
+ - fallthrough
+ - fatal_error_message
+ - joined_default_parameter
+ - legacy_multiple
+ - pattern_matching_keywords
+ - prefer_zero_over_explicit_init
+ - redundant_nil_coalescing
+ - redundant_type_annotation
+ - static_operator
+ - toggle_bool
+ - unavailable_function
+ - untyped_error_in_catch
+ - xct_specific_matcher
+ # lint
+ - anyobject_protocol
+ - array_init
+ - empty_xctest_method
+ - identical_operands
+ - lower_acl_than_parent
+ - overridden_super_call
+ - override_in_extension
+ - test_case_accessibility
+ - yoda_condition
+ #metrics
+ - closure_body_length
+ - enum_case_associated_values_count
+ - function_parameter_count
+ # performance
+ - contains_over_filter_count
+ - contains_over_filter_is_empty
+ - contains_over_first_not_nil
+ - contains_over_range_nil_comparison
+ - empty_collection_literal
+ - empty_count
+ - empty_string
+ - first_where
+ - flatmap_over_map_reduce
+ - last_where
+ - reduce_into
+ - sorted_first_last
+ # style
+ - attributes
+ - closure_end_indentation
+ - closure_spacing
+ - collection_alignment
+ - file_types_order
+ - implicit_return
+ - inclusive_language
+ - indentation_width
+ - literal_expression_end_indentation
+ - modifier_order
+ - multiline_arguments
+ - multiline_function_chains
+ - multiline_parameters
+ - operator_usage_whitespace
+ - optional_enum_case_matching
+ - prefer_self_type_over_type_of_self
+ - single_test_class
+ - sorted_imports
+ - switch_case_on_newline
+ - trailing_closure
+ - type_contents_order
+ - unneeded_parentheses_in_closure_argument
+ - vertical_parameter_alignment_on_call
+ - vertical_whitespace_closing_braces
+ - let_var_whitespace
+
+analyzer_rules: # Rules run by `swiftlint analyze` (experimental)
+ - explicit_self
+ - unused_declaration
+ - unused_import
+
+cyclomatic_complexity:
+  ignores_case_statements: true
+
+identifier_name:
+  min_length:
+    error: 2
+  excluded:
+    - id
+    - url
+    
+closure_body_length:
+  warning: 30
+
+line_length:
+  ignores comments: true
+    
+reporter: "xcode"
