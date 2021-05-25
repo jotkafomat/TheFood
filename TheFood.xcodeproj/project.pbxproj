@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1158218265CF8CD00241BF9 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1158217265CF8CD00241BF9 /* Recipe.swift */; };
+		E115821B265CFAD300241BF9 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E115821A265CFAD300241BF9 /* RecipeView.swift */; };
 		E1D85D84265BDD5C0048CA35 /* TheFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D85D83265BDD5C0048CA35 /* TheFoodApp.swift */; };
 		E1D85D86265BDD5C0048CA35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D85D85265BDD5C0048CA35 /* ContentView.swift */; };
 		E1D85D88265BDD5E0048CA35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D85D87265BDD5E0048CA35 /* Assets.xcassets */; };
 		E1D85D8B265BDD5E0048CA35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D85D8A265BDD5E0048CA35 /* Preview Assets.xcassets */; };
 		E1D85D96265BDD5E0048CA35 /* TheFoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D85D95265BDD5E0048CA35 /* TheFoodTests.swift */; };
 		E1D85DA1265BDD5F0048CA35 /* TheFoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D85DA0265BDD5F0048CA35 /* TheFoodUITests.swift */; };
-		E1D85DAF265BDEF70048CA35 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = E1D85DAE265BDEF70048CA35 /* .travis.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E1158217265CF8CD00241BF9 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		E115821A265CFAD300241BF9 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		E1D85D80265BDD5C0048CA35 /* TheFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D85D83265BDD5C0048CA35 /* TheFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheFoodApp.swift; sourceTree = "<group>"; };
 		E1D85D85265BDD5C0048CA35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +78,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E1158219265CF8D800241BF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1158217265CF8CD00241BF9 /* Recipe.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E115821C265CFAE500241BF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E115821A265CFAD300241BF9 /* RecipeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E1D85D77265BDD5C0048CA35 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +124,8 @@
 				E1D85D87265BDD5E0048CA35 /* Assets.xcassets */,
 				E1D85D8C265BDD5E0048CA35 /* Info.plist */,
 				E1D85D89265BDD5E0048CA35 /* Preview Content */,
+				E1158219265CF8D800241BF9 /* Model */,
+				E115821C265CFAE500241BF9 /* View */,
 			);
 			path = TheFood;
 			sourceTree = "<group>";
@@ -239,7 +260,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1D85DAF265BDEF70048CA35 /* .travis.yml in Resources */,
 				E1D85D8B265BDD5E0048CA35 /* Preview Assets.xcassets in Resources */,
 				E1D85D88265BDD5E0048CA35 /* Assets.xcassets in Resources */,
 			);
@@ -278,7 +298,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect && swiftlint\nelse\n    echo \"SwiftLint is not installed\"\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint is not installed\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -287,7 +307,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1158218265CF8CD00241BF9 /* Recipe.swift in Sources */,
 				E1D85D86265BDD5C0048CA35 /* ContentView.swift in Sources */,
+				E115821B265CFAD300241BF9 /* RecipeView.swift in Sources */,
 				E1D85D84265BDD5C0048CA35 /* TheFoodApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
