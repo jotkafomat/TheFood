@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E1158218265CF8CD00241BF9 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1158217265CF8CD00241BF9 /* Recipe.swift */; };
 		E115821B265CFAD300241BF9 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E115821A265CFAD300241BF9 /* RecipeView.swift */; };
+		E115821E265D3E7700241BF9 /* FrameColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E115821D265D3E7700241BF9 /* FrameColor.swift */; };
 		E1D85D84265BDD5C0048CA35 /* TheFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D85D83265BDD5C0048CA35 /* TheFoodApp.swift */; };
 		E1D85D86265BDD5C0048CA35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D85D85265BDD5C0048CA35 /* ContentView.swift */; };
 		E1D85D88265BDD5E0048CA35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D85D87265BDD5E0048CA35 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		E1158217265CF8CD00241BF9 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		E115821A265CFAD300241BF9 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		E115821D265D3E7700241BF9 /* FrameColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameColor.swift; sourceTree = "<group>"; };
 		E1D85D80265BDD5C0048CA35 /* TheFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D85D83265BDD5C0048CA35 /* TheFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheFoodApp.swift; sourceTree = "<group>"; };
 		E1D85D85265BDD5C0048CA35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				E1158217265CF8CD00241BF9 /* Recipe.swift */,
+				E115821D265D3E7700241BF9 /* FrameColor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1158218265CF8CD00241BF9 /* Recipe.swift in Sources */,
+				E115821E265D3E7700241BF9 /* FrameColor.swift in Sources */,
 				E1D85D86265BDD5C0048CA35 /* ContentView.swift in Sources */,
 				E115821B265CFAD300241BF9 /* RecipeView.swift in Sources */,
 				E1D85D84265BDD5C0048CA35 /* TheFoodApp.swift in Sources */,

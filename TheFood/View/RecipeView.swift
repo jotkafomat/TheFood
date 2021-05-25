@@ -10,7 +10,7 @@ import SwiftUI
 struct RecipeView: View {
 
     let recipe: Recipe
-    let frameColor: Color = .purple
+    let frameColor: Color = FrameColor.allCases.randomElement()?.color ?? .purple
 
     var body: some View {
         Rectangle()
