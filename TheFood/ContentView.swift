@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @StateObject private var controller = RecipesController()
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ScrollView(showsIndicators: false) {
+            LazyVStack(spacing: 2.0) {
+                ForEach(controller.recipes, id: \.self) { item in
+                    RecipeView(recipe: item)
+                }
+            }
+        }
     }
 }
 
