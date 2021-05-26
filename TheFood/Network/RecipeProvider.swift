@@ -10,5 +10,5 @@ import Combine
 
 protocol RecipeProvider {
     func getLatestRecipes() -> AnyPublisher<[Recipe], Never>
-    
+
 }

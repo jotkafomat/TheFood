@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @StateObject private var controller = RecipesController()
+    @ObservedObject private var controller = RecipesController(recipesProvider: InMemoryRecipesProvider())
 
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -18,6 +18,9 @@ struct ContentView: View {
                     RecipeView(recipe: item)
                 }
             }
+        }
+        .onAppear {
+            controller.getRecipes()
         }
     }
 }
