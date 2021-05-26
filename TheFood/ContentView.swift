@@ -9,18 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @ObservedObject private var controller = RecipesController(recipesProvider: InMemoryRecipesProvider())
+    @ObservedObject private var recipesFetcher = RecipesFetcher(recipesPublisher: InMemoryRecipesPublisher())
 
     var body: some View {
         ScrollView(showsIndicators: false) {
             LazyVStack(spacing: 2.0) {
-                ForEach(controller.recipes, id: \.self) { item in
+                ForEach(recipesFetcher.recipes, id: \.self) { item in
                     RecipeView(recipe: item)
                 }
             }
         }
         .onAppear {
-            controller.getRecipes()
+            recipesFetcher.getRecipes()
         }
     }
 }

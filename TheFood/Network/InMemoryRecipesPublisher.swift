@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-struct InMemoryRecipesProvider: RecipeProvider {
+struct InMemoryRecipesPublisher: RecipesPublisher {
 
     func getLatestRecipes() -> AnyPublisher<[Recipe], Never> {
 
