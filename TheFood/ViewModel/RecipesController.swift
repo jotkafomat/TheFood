@@ -1,5 +1,5 @@
 //
-//  RecipesFetcher.swift
+//  RecipesController.swift
 //  TheFood
 //
 //  Created by Krzysztof Jankowski on 25/05/2021.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class RecipesFetcher: ObservableObject {
+class RecipesController: ObservableObject {
 
     @Published private (set) var recipes = [Recipe]()
     private let recipesPublisher: RecipesPublisher

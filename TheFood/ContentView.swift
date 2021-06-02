@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @ObservedObject private var recipesFetcher = RecipesFetcher(recipesPublisher: InMemoryRecipesPublisher())
+    @ObservedObject private var recipesFetcher = RecipesController(recipesPublisher: InMemoryRecipesPublisher())
 
     var body: some View {
         ScrollView(showsIndicators: false) {
