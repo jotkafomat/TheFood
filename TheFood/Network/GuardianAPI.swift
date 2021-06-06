@@ -11,15 +11,15 @@ import Foundation
 class GuardianAPI: RecipesPublisher {
 
 private let session: URLSession
-private let baseURL: URL
+private let baseUrl: URL
 
-    init(session: URLSession, baseURL: URL) {
+    init(session: URLSession, baseUrl: URL) {
         self.session = session
-        self.baseURL = baseURL
+        self.baseUrl = baseUrl
     }
 
     func getLatestRecipes() -> AnyPublisher<[Recipe], Never> {
-        var request = URLRequest(url: baseURL)
+        var request = URLRequest(url: baseUrl)
         request.httpMethod = "GET"
         return session
             .dataTaskPublisher(for: request)

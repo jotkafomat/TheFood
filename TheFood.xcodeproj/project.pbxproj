@@ -18,6 +18,8 @@
 		E1518FC4266C0DD700068DAB /* GuardianAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1518FC3266C0DD700068DAB /* GuardianAPI.swift */; };
 		E1518FC6266CCF3D00068DAB /* Data+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1518FC5266CCF3D00068DAB /* Data+Extenstion.swift */; };
 		E1518FC9266CD53800068DAB /* exampleResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = E1518FBD266C0ACF00068DAB /* exampleResponse.json */; };
+		E1518FCD266CE5AE00068DAB /* GuardianAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1518FCC266CE5AE00068DAB /* GuardianAPITest.swift */; };
+		E1518FCF266CE68F00068DAB /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1518FCE266CE68F00068DAB /* MockURLProtocol.swift */; };
 		E1D85D84265BDD5C0048CA35 /* TheFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D85D83265BDD5C0048CA35 /* TheFoodApp.swift */; };
 		E1D85D86265BDD5C0048CA35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D85D85265BDD5C0048CA35 /* ContentView.swift */; };
 		E1D85D88265BDD5E0048CA35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D85D87265BDD5E0048CA35 /* Assets.xcassets */; };
@@ -56,6 +58,8 @@
 		E1518FC3266C0DD700068DAB /* GuardianAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianAPI.swift; sourceTree = "<group>"; };
 		E1518FC5266CCF3D00068DAB /* Data+Extenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extenstion.swift"; sourceTree = "<group>"; };
 		E1518FCA266CD8C000068DAB /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		E1518FCC266CE5AE00068DAB /* GuardianAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianAPITest.swift; sourceTree = "<group>"; };
+		E1518FCE266CE68F00068DAB /* MockURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		E1D85D80265BDD5C0048CA35 /* TheFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D85D83265BDD5C0048CA35 /* TheFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheFoodApp.swift; sourceTree = "<group>"; };
 		E1D85D85265BDD5C0048CA35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,6 +152,15 @@
 			path = GuardiaApiResponseTest;
 			sourceTree = "<group>";
 		};
+		E1518FCB266CE58C00068DAB /* GuardianAPITest */ = {
+			isa = PBXGroup;
+			children = (
+				E1518FCC266CE5AE00068DAB /* GuardianAPITest.swift */,
+				E1518FCE266CE68F00068DAB /* MockURLProtocol.swift */,
+			);
+			path = GuardianAPITest;
+			sourceTree = "<group>";
+		};
 		E1D85D77265BDD5C0048CA35 = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +211,7 @@
 		E1D85D94265BDD5E0048CA35 /* TheFoodTests */ = {
 			isa = PBXGroup;
 			children = (
+				E1518FCB266CE58C00068DAB /* GuardianAPITest */,
 				E1518FC0266C0D5D00068DAB /* GuardiaApiResponseTest */,
 				E1D85D95265BDD5E0048CA35 /* TheFoodTests.swift */,
 				E12CA256265E95FC00FBD136 /* MockRecipesPublisher.swift */,
@@ -384,7 +398,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E12CA257265E95FC00FBD136 /* MockRecipesPublisher.swift in Sources */,
+				E1518FCD266CE5AE00068DAB /* GuardianAPITest.swift in Sources */,
 				E1D85D96265BDD5E0048CA35 /* TheFoodTests.swift in Sources */,
+				E1518FCF266CE68F00068DAB /* MockURLProtocol.swift in Sources */,
 				E1518FC6266CCF3D00068DAB /* Data+Extenstion.swift in Sources */,
 				E1518FC2266C0D9300068DAB /* GuardianAPIResponseTest.swift in Sources */,
 			);
