@@ -7,7 +7,31 @@
 
 import Foundation
 
-struct Recipe: Hashable {
+struct GuardiaAPIResponse: Decodable {
+    fileprivate let response: Response
+
+    var recipes: [Recipe] {
+        response.recipes
+    }
+}
+
+private struct Response: Decodable {
+    fileprivate let results: [Result]
+
+    var recipes: [Recipe] {
+        results.map(\.fields)
+    }
+}
+
+private struct Result: Decodable {
+    let fields: Recipe
+}
+
+struct Recipe: Decodable, Hashable {
     let headline: String
     let thumbnail: String
+
+    var image: URL? {
+        URL(string: thumbnail)
+    }
 }

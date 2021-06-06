@@ -9,21 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @StateObject private var controller = RecipesController()
+    @ObservedObject var recipesController: RecipesController
 
     var body: some View {
         ScrollView(showsIndicators: false) {
             LazyVStack(spacing: 2.0) {
-                ForEach(controller.recipes, id: \.self) { item in
+                ForEach(recipesController.recipes, id: \.self) { item in
                     RecipeView(recipe: item)
                 }
             }
         }
+        .onAppear {
+            recipesController.getRecipes()
+        }
     }
 }
 
+#if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(
+            recipesController: RecipesController(
+                recipesPublisher: InMemoryRecipesPublisher()))
     }
 }
+#endif

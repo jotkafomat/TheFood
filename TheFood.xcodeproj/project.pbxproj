@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,16 @@
 		E115821B265CFAD300241BF9 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E115821A265CFAD300241BF9 /* RecipeView.swift */; };
 		E115821E265D3E7700241BF9 /* FrameColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E115821D265D3E7700241BF9 /* FrameColor.swift */; };
 		E1158225265D467A00241BF9 /* RecipesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1158224265D467900241BF9 /* RecipesController.swift */; };
+		E12CA250265E833700FBD136 /* RecipesPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12CA24F265E833700FBD136 /* RecipesPublisher.swift */; };
+		E12CA255265E85D100FBD136 /* InMemoryRecipesPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12CA254265E85D100FBD136 /* InMemoryRecipesPublisher.swift */; };
+		E12CA257265E95FC00FBD136 /* MockRecipesPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12CA256265E95FC00FBD136 /* MockRecipesPublisher.swift */; };
+		E1518FC2266C0D9300068DAB /* GuardianAPIResponseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1518FC1266C0D9300068DAB /* GuardianAPIResponseTest.swift */; };
+		E1518FC4266C0DD700068DAB /* GuardianAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1518FC3266C0DD700068DAB /* GuardianAPI.swift */; };
+		E1518FC6266CCF3D00068DAB /* Data+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1518FC5266CCF3D00068DAB /* Data+Extenstion.swift */; };
+		E1518FC9266CD53800068DAB /* exampleResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = E1518FBD266C0ACF00068DAB /* exampleResponse.json */; };
+		E1518FCD266CE5AE00068DAB /* GuardianAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1518FCC266CE5AE00068DAB /* GuardianAPITest.swift */; };
+		E1518FCF266CE68F00068DAB /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1518FCE266CE68F00068DAB /* MockURLProtocol.swift */; };
+		E1518FD2266CFB7800068DAB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E1518FD1266CFB7800068DAB /* Kingfisher */; };
 		E1D85D84265BDD5C0048CA35 /* TheFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D85D83265BDD5C0048CA35 /* TheFoodApp.swift */; };
 		E1D85D86265BDD5C0048CA35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D85D85265BDD5C0048CA35 /* ContentView.swift */; };
 		E1D85D88265BDD5E0048CA35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D85D87265BDD5E0048CA35 /* Assets.xcassets */; };
@@ -41,6 +51,16 @@
 		E115821A265CFAD300241BF9 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		E115821D265D3E7700241BF9 /* FrameColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameColor.swift; sourceTree = "<group>"; };
 		E1158224265D467900241BF9 /* RecipesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesController.swift; sourceTree = "<group>"; };
+		E12CA24F265E833700FBD136 /* RecipesPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesPublisher.swift; sourceTree = "<group>"; };
+		E12CA254265E85D100FBD136 /* InMemoryRecipesPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryRecipesPublisher.swift; sourceTree = "<group>"; };
+		E12CA256265E95FC00FBD136 /* MockRecipesPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRecipesPublisher.swift; sourceTree = "<group>"; };
+		E1518FBD266C0ACF00068DAB /* exampleResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = exampleResponse.json; sourceTree = "<group>"; };
+		E1518FC1266C0D9300068DAB /* GuardianAPIResponseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianAPIResponseTest.swift; sourceTree = "<group>"; };
+		E1518FC3266C0DD700068DAB /* GuardianAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianAPI.swift; sourceTree = "<group>"; };
+		E1518FC5266CCF3D00068DAB /* Data+Extenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extenstion.swift"; sourceTree = "<group>"; };
+		E1518FCA266CD8C000068DAB /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		E1518FCC266CE5AE00068DAB /* GuardianAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianAPITest.swift; sourceTree = "<group>"; };
+		E1518FCE266CE68F00068DAB /* MockURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		E1D85D80265BDD5C0048CA35 /* TheFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D85D83265BDD5C0048CA35 /* TheFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheFoodApp.swift; sourceTree = "<group>"; };
 		E1D85D85265BDD5C0048CA35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,7 +74,6 @@
 		E1D85DA0265BDD5F0048CA35 /* TheFoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheFoodUITests.swift; sourceTree = "<group>"; };
 		E1D85DA2265BDD5F0048CA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1D85DAE265BDEF70048CA35 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
-		E1D85DB5265BF29D0048CA35 /* swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1518FD2266CFB7800068DAB /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,11 +127,39 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		E12CA253265E852300FBD136 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E12CA24F265E833700FBD136 /* RecipesPublisher.swift */,
+				E1518FC3266C0DD700068DAB /* GuardianAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E1518FC0266C0D5D00068DAB /* GuardiaApiResponseTest */ = {
+			isa = PBXGroup;
+			children = (
+				E1518FBD266C0ACF00068DAB /* exampleResponse.json */,
+				E1518FC1266C0D9300068DAB /* GuardianAPIResponseTest.swift */,
+				E1518FC5266CCF3D00068DAB /* Data+Extenstion.swift */,
+			);
+			path = GuardiaApiResponseTest;
+			sourceTree = "<group>";
+		};
+		E1518FCB266CE58C00068DAB /* GuardianAPITest */ = {
+			isa = PBXGroup;
+			children = (
+				E1518FCC266CE5AE00068DAB /* GuardianAPITest.swift */,
+				E1518FCE266CE68F00068DAB /* MockURLProtocol.swift */,
+			);
+			path = GuardianAPITest;
+			sourceTree = "<group>";
+		};
 		E1D85D77265BDD5C0048CA35 = {
 			isa = PBXGroup;
 			children = (
+				E1518FCA266CD8C000068DAB /* .swiftlint.yml */,
 				E1D85DAE265BDEF70048CA35 /* .travis.yml */,
-				E1D85DB5265BF29D0048CA35 /* swiftlint.yml */,
 				E1D85D82265BDD5C0048CA35 /* TheFood */,
 				E1D85D94265BDD5E0048CA35 /* TheFoodTests */,
 				E1D85D9F265BDD5F0048CA35 /* TheFoodUITests */,
@@ -132,6 +180,7 @@
 		E1D85D82265BDD5C0048CA35 /* TheFood */ = {
 			isa = PBXGroup;
 			children = (
+				E12CA253265E852300FBD136 /* Network */,
 				E1158223265D463800241BF9 /* ViewModel */,
 				E1D85D83265BDD5C0048CA35 /* TheFoodApp.swift */,
 				E1D85D85265BDD5C0048CA35 /* ContentView.swift */,
@@ -147,6 +196,7 @@
 		E1D85D89265BDD5E0048CA35 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				E12CA254265E85D100FBD136 /* InMemoryRecipesPublisher.swift */,
 				E1D85D8A265BDD5E0048CA35 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -155,7 +205,10 @@
 		E1D85D94265BDD5E0048CA35 /* TheFoodTests */ = {
 			isa = PBXGroup;
 			children = (
+				E1518FCB266CE58C00068DAB /* GuardianAPITest */,
+				E1518FC0266C0D5D00068DAB /* GuardiaApiResponseTest */,
 				E1D85D95265BDD5E0048CA35 /* TheFoodTests.swift */,
+				E12CA256265E95FC00FBD136 /* MockRecipesPublisher.swift */,
 				E1D85D97265BDD5E0048CA35 /* Info.plist */,
 			);
 			path = TheFoodTests;
@@ -187,6 +240,9 @@
 			dependencies = (
 			);
 			name = TheFood;
+			packageProductDependencies = (
+				E1518FD1266CFB7800068DAB /* Kingfisher */,
+			);
 			productName = TheFood;
 			productReference = E1D85D80265BDD5C0048CA35 /* TheFood.app */;
 			productType = "com.apple.product-type.application";
@@ -258,6 +314,9 @@
 				Base,
 			);
 			mainGroup = E1D85D77265BDD5C0048CA35;
+			packageReferences = (
+				E1518FD0266CFB7800068DAB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = E1D85D81265BDD5C0048CA35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -283,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1518FC9266CD53800068DAB /* exampleResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +372,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"SwiftLint is not installed\"\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect && swiftlint\nelse\n    echo \"SwiftLint is not installed\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -323,9 +383,12 @@
 			files = (
 				E1158218265CF8CD00241BF9 /* Recipe.swift in Sources */,
 				E1158225265D467A00241BF9 /* RecipesController.swift in Sources */,
+				E12CA250265E833700FBD136 /* RecipesPublisher.swift in Sources */,
 				E115821E265D3E7700241BF9 /* FrameColor.swift in Sources */,
 				E1D85D86265BDD5C0048CA35 /* ContentView.swift in Sources */,
 				E115821B265CFAD300241BF9 /* RecipeView.swift in Sources */,
+				E12CA255265E85D100FBD136 /* InMemoryRecipesPublisher.swift in Sources */,
+				E1518FC4266C0DD700068DAB /* GuardianAPI.swift in Sources */,
 				E1D85D84265BDD5C0048CA35 /* TheFoodApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,7 +397,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12CA257265E95FC00FBD136 /* MockRecipesPublisher.swift in Sources */,
+				E1518FCD266CE5AE00068DAB /* GuardianAPITest.swift in Sources */,
 				E1D85D96265BDD5E0048CA35 /* TheFoodTests.swift in Sources */,
+				E1518FCF266CE68F00068DAB /* MockURLProtocol.swift in Sources */,
+				E1518FC6266CCF3D00068DAB /* Data+Extenstion.swift in Sources */,
+				E1518FC2266C0D9300068DAB /* GuardianAPIResponseTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +714,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E1518FD0266CFB7800068DAB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E1518FD1266CFB7800068DAB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1518FD0266CFB7800068DAB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E1D85D78265BDD5C0048CA35 /* Project object */;
 }
