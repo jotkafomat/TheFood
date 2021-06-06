@@ -25,8 +25,12 @@ struct ContentView: View {
     }
 }
 
+#if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(recipesController: RecipesController())
+        ContentView(
+            recipesController: RecipesController(
+                recipesPublisher: InMemoryRecipesPublisher()))
     }
 }
+#endif

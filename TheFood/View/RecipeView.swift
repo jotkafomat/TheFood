@@ -36,20 +36,19 @@ struct RecipeView: View {
             )
     }
 }
-
 struct RecipeView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             RecipeView(
                 recipe: Recipe(
                     headline: "Thomasina Miers’ recipe for courgetti carbonara",
-                    thumbnail: "carbonara"))
+                    thumbnail: "https://media.guim.co.uk/793f8c456f5fa74a0f8f789580fecb950a5c2cda/0_3728_5792_3475/500.jpg"))
                 .preferredColorScheme(.light)
                 .previewDevice("iPhone 12 Pro Max")
             RecipeView(
                 recipe: Recipe(
                     headline: "Thomasina Miers’ recipe for courgetti carbonara",
-                    thumbnail: "carbonara"))
+                    thumbnail: "https://media.guim.co.uk/793f8c456f5fa74a0f8f789580fecb950a5c2cda/0_3728_5792_3475/500.jpg"))
                 .preferredColorScheme(.dark)
                 .environment(\.sizeCategory, .accessibilityMedium)
                 .previewDevice("iPhone 12 Pro Max")

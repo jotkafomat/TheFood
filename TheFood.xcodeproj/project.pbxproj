@@ -130,24 +130,16 @@
 		E12CA253265E852300FBD136 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				E12CA254265E85D100FBD136 /* InMemoryRecipesPublisher.swift */,
 				E12CA24F265E833700FBD136 /* RecipesPublisher.swift */,
 				E1518FC3266C0DD700068DAB /* GuardianAPI.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
 		};
-		E1518FBF266C0AE100068DAB /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				E1518FBD266C0ACF00068DAB /* exampleResponse.json */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		E1518FC0266C0D5D00068DAB /* GuardiaApiResponseTest */ = {
 			isa = PBXGroup;
 			children = (
+				E1518FBD266C0ACF00068DAB /* exampleResponse.json */,
 				E1518FC1266C0D9300068DAB /* GuardianAPIResponseTest.swift */,
 				E1518FC5266CCF3D00068DAB /* Data+Extenstion.swift */,
 			);
@@ -188,7 +180,6 @@
 		E1D85D82265BDD5C0048CA35 /* TheFood */ = {
 			isa = PBXGroup;
 			children = (
-				E1518FBF266C0AE100068DAB /* Helpers */,
 				E12CA253265E852300FBD136 /* Network */,
 				E1158223265D463800241BF9 /* ViewModel */,
 				E1D85D83265BDD5C0048CA35 /* TheFoodApp.swift */,
@@ -205,6 +196,7 @@
 		E1D85D89265BDD5E0048CA35 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				E12CA254265E85D100FBD136 /* InMemoryRecipesPublisher.swift */,
 				E1D85D8A265BDD5E0048CA35 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
