@@ -5,6 +5,7 @@
 //  Created by Krzysztof Jankowski on 25/05/2021.
 //
 
+import Kingfisher
 import SwiftUI
 
 struct RecipeView: View {
@@ -17,7 +18,7 @@ struct RecipeView: View {
             .aspectRatio(0.97, contentMode: .fit)
             .foregroundColor(frameColor)
             .overlay(
-                Image(decorative: recipe.thumbnail)
+                KFImage(recipe.image)
                     .resizable()
                     .scaledToFill()
                     .aspectRatio(1, contentMode: .fit)

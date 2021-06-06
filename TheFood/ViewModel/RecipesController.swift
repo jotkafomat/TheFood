@@ -12,7 +12,7 @@ class RecipesController: ObservableObject {
     @Published private (set) var recipes = [Recipe]()
     private let recipesPublisher: RecipesPublisher
 
-    init(recipesPublisher: RecipesPublisher) {
+    init(recipesPublisher: RecipesPublisher = GuardianAPI()) {
         self.recipesPublisher = recipesPublisher
     }
 

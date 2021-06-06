@@ -13,7 +13,10 @@ class GuardianAPI: RecipesPublisher {
 private let session: URLSession
 private let baseUrl: URL
 
-    init(session: URLSession, baseUrl: URL) {
+    init(
+        session: URLSession = URLSession.shared,
+        baseUrl: URL = URL(
+        string: "https://content.guardianapis.com/search?api-key=438d1261-9311-4def-b60b-36b65295dfa0&page-size=50&tag=tone/recipes&show-fields=thumbnail,headline")!) {
         self.session = session
         self.baseUrl = baseUrl
     }
