@@ -10,15 +10,12 @@ import XCTest
 class TheFoodUITests: XCTestCase {
 
     override func setUpWithError() throws {
+        try super.setUpWithError()
         continueAfterFailure = false
-    }
-
-    override func tearDownWithError() throws {
     }
 
     func testExample() throws {
         let app = XCUIApplication()
         app.launch()
-
     }
 }

@@ -10,6 +10,7 @@ import SwiftUI
 
 enum FrameColor: CaseIterable {
     case blue, brown, cyan, green, magenta, orange, red
+
     var color: Color {
         switch self {
         case .blue:

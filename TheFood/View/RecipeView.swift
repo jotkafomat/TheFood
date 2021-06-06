@@ -39,14 +39,16 @@ struct RecipeView: View {
 struct RecipeView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            RecipeView(recipe: Recipe(
-                        headline: "Thomasina Miers’ recipe for courgetti carbonara",
-                        thumbnail: "carbonara"))
+            RecipeView(
+                recipe: Recipe(
+                    headline: "Thomasina Miers’ recipe for courgetti carbonara",
+                    thumbnail: "carbonara"))
                 .preferredColorScheme(.light)
                 .previewDevice("iPhone 12 Pro Max")
-            RecipeView(recipe: Recipe(
-                        headline: "Thomasina Miers’ recipe for courgetti carbonara",
-                        thumbnail: "carbonara"))
+            RecipeView(
+                recipe: Recipe(
+                    headline: "Thomasina Miers’ recipe for courgetti carbonara",
+                    thumbnail: "carbonara"))
                 .preferredColorScheme(.dark)
                 .environment(\.sizeCategory, .accessibilityMedium)
                 .previewDevice("iPhone 12 Pro Max")

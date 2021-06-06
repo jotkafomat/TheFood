@@ -1,6 +1,5 @@
 disabled_rules:
- - private_over_fileprivate
- 
+
 opt_in_rules:
  # idiomatic
  - convenience_type
@@ -97,3 +96,4 @@ line_length:
   ignores comments: true
     
 reporter: "xcode"
+

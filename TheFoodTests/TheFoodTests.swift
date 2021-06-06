@@ -5,19 +5,17 @@
 //  Created by Krzysztof Jankowski on 24/05/2021.
 //
 
-import XCTest
 import Combine
 @testable import TheFood
+import XCTest
 
 class TheFoodTests: XCTestCase {
 
-    var recipesController: RecipesController!
-    var cancellable: AnyCancellable?
-
-    override func setUpWithError() throws {
-    }
+    private var recipesController: RecipesController!
+    private var cancellable: AnyCancellable?
 
     override func tearDownWithError() throws {
+        try super.tearDownWithError()
         recipesController = nil
         cancellable?.cancel()
     }
