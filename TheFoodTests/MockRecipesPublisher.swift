@@ -23,13 +23,12 @@ enum MockRecipesPublisher: RecipesPublisher {
             Recipe(headline: "Rachel Roddy’s recipe for lamb and peas", thumbnail: "lambAndPeas"),
             Recipe(headline: "Birthday custard sponge by Nigella Lawson", thumbnail: "custardSponge"),
             Recipe(headline: "Stout and chocolate cake with toasted oats by Claire Thomson", thumbnail: "stoutCake"),
-            Recipe(headline: "Simple banana cake by Ravneet Gill",
-            ])
-            )
+            Recipe(headline: "Simple banana cake by Ravneet Gill", thumbnail: "bananaCake")])
+                .eraseToAnyPublisher()
         case .failure:
             return Just<[Recipe]>([]).eraseToAnyPublisher()
         case .any:
-            )
+            return Empty().eraseToAnyPublisher()
         }
     }
 }
