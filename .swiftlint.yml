@@ -94,6 +94,7 @@ closure_body_length:
 
 line_length:
   ignores comments: true
+  ignores urls: true
     
 reporter: "xcode"
 
