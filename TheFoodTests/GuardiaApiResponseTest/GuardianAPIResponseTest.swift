@@ -28,9 +28,9 @@ class GuardianAPIResponseTest: XCTestCase {
         XCTAssertEqual(response.recipes.count, 5)
 
         let recipe = try XCTUnwrap(response.recipes.first)
-        XCTAssertEqual(recipe.headline, "How to use up wilted or bolted lettuce – a recipe for cheesy gratin")
+        XCTAssertEqual(recipe.headline, "Thomasina Miers’ recipe for  clotted cream drizzle cake with macerated strawberries")
         XCTAssertEqual(
             recipe.thumbnail,
-            "https://media.guim.co.uk/e8132a7db3d2df6f49b15012412e4e068e8b1e1f/0_80_2048_1229/500.jpg")
+            "https://media.guim.co.uk/59a765b09fa3bb95c0d60705077fdab4900d2152/0_2784_5792_3475/500.jpg")
     }
 }
