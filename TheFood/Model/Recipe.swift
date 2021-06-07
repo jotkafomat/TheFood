@@ -30,6 +30,9 @@ private struct Result: Decodable {
 struct Recipe: Decodable, Hashable {
     let headline: String
     let thumbnail: String
+    let trailText: String
+    let byline: String
+    let body: String
 
     var image: URL? {
         URL(string: thumbnail)
