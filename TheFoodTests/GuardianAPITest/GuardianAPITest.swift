@@ -45,7 +45,7 @@ class GuardianAPITest: XCTestCase {
             XCTAssertEqual(recipes[0].headline, "Thomasina Miers’ recipe for  clotted cream drizzle cake with macerated strawberries")
             XCTAssertEqual(
                 recipes[0].thumbnail,
-                "https://media.guim.co.uk/59a765b09fa3bb95c0d60705077fdab4900d2152/0_2784_5792_3475/500.jpg")
+                URL(string: "https://media.guim.co.uk/59a765b09fa3bb95c0d60705077fdab4900d2152/0_2784_5792_3475/500.jpg")!)
             expectation.fulfill()
         }
         waitForExpectations(timeout: 1)

@@ -18,7 +18,7 @@ struct RecipeView: View {
             .aspectRatio(0.97, contentMode: .fit)
             .foregroundColor(frameColor)
             .overlay(
-                KFImage(recipe.image)
+                KFImage(recipe.thumbnail)
                     .resizable()
                     .scaledToFill()
                     .aspectRatio(1, contentMode: .fit)

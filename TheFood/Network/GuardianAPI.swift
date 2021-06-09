@@ -16,7 +16,7 @@ class GuardianAPI: RecipesPublisher {
     init(
         session: URLSession = URLSession.shared,
         baseUrl: URL = URL(
-            string: "https://content.guardianapis.com/search?api-key=438d1261-9311-4def-b60b-36b65295dfa0&page-size=50&tag=tone/recipes&show-fields=thumbnail,headline")!) {
+            string: "https://content.guardianapis.com/search?api-key=438d1261-9311-4def-b60b-36b65295dfa0&page-size=50&tag=tone/recipes&show-fields=headline,trailText,byline,body,thumbnail&show-tags=series")!) {
         self.session = session
         self.baseUrl = baseUrl
     }
@@ -27,8 +27,8 @@ class GuardianAPI: RecipesPublisher {
         return session
             .dataTaskPublisher(for: request)
             .map(\.data)
-            .decode(type: GuardiaAPIResponse.self, decoder: JSONDecoder())
-            .map(\.recipes)
+            .decode(type: Response.self, decoder: JSONDecoder())
+            .map(\.results)
             .catch { _ in Just<[Recipe]>([]) }
             .eraseToAnyPublisher()
     }

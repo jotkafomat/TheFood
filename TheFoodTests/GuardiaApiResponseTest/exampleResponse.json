@@ -1,114 +1,189 @@
 {
-   "response":{
-      "status":"ok",
-      "userTier":"developer",
-      "total":7978,
-      "startIndex":1,
-      "pageSize":5,
-      "currentPage":1,
-      "pages":1596,
-      "orderBy":"newest",
-      "results":[
-         {
-            "id":"food/2021/jun/07/thomasina-miers-recipe-clotted-cream-cake-elderflower-drizzle-macerated-strawberries",
-            "type":"article",
-            "sectionId":"food",
-            "sectionName":"Food",
-            "webPublicationDate":"2021-06-07T12:00:07Z",
-            "webTitle":"Thomasina Miers’ recipe for  clotted cream drizzle cake with macerated strawberries | The simple fix",
-            "webUrl":"https://www.theguardian.com/food/2021/jun/07/thomasina-miers-recipe-clotted-cream-cake-elderflower-drizzle-macerated-strawberries",
-            "apiUrl":"https://content.guardianapis.com/food/2021/jun/07/thomasina-miers-recipe-clotted-cream-cake-elderflower-drizzle-macerated-strawberries",
-            "fields":{
-               "headline":"Thomasina Miers’ recipe for  clotted cream drizzle cake with macerated strawberries",
-               "trailText":"Serve this jammy, creamy cake as an extremely English alternative to scones ",
-               "byline":"Thomasina Miers",
-               "body":"<p>When I was little, clotted cream was a rare treat. I remember once, when my uncle came back from Devon with two precious pots of the stuff for us, I immediately set to baking a batch of scones, which we ate warm from the oven with jam, lashings of that amazing cream and butter (to this day, I always have my scones with cream <em>and</em> butter). So it was with delight, many years later on a blistering hot day in Tlacotalpan, Mexico, that I came across a woman selling a basket of cakes made from clotted cream. I can still taste them as I write this.</p> <h2>Clotted cream loaf cake with elderflower drizzle and macerated strawberries</h2> <p>Elderflower, vanilla, strawberries and lemon in a squidgy, almond, creamy loaf cake.</p> <p>Prep <strong>30 min</strong><br>Cook <strong>1 hr</strong><br>Serves <strong>10-12</strong></p> <p><strong>200g butter</strong>, softened, plus extra to grease<br><strong>200g caster sugar</strong>,<strong> </strong>plus extra to macerate the strawberries<strong><br>1 tsp vanilla essence<br>4 eggs<br>150ml clotted cream</strong>,<strong> </strong>plus extra to serve<strong> <br>1 lemon</strong>, zested and juiced<strong><br>150g plain spelt flour<br>100g ground almonds<br>½ tsp salt<br>1</strong><strong>½ tsp baking powder<br>300g strawberries</strong></p> <p>For the drizzle<strong><br>100ml elderflower cordial</strong><strong><br>2 tsp caster sugar</strong></p> <p>Heat the oven to 170C (150C fan)/325F/gas 3. Grease a 1½lb loaf tin. Put the butter, sugar and vanilla in a bowl and, using an electric hand whisk, beat until pale, light and creamy. Add the eggs one at a time, incorporating each one before adding the next. Whisk in the cream and lemon zest, then fold in the flour, ground almonds, salt and baking powder.</p> <p>Transfer to the greased tin, smooth out the top and bake for one hour, until a skewer comes out clean when inserted into the centre.</p> <p>Meanwhile, heat the cordial and sugar in a small pan and, once the sugar dissolves, take off the heat and stir in the juice of half the lemon. If the cordial is homemade, you may need a little more sugar.</p> <p>Hull the strawberries and put in a bowl. Add the remaining lemon juice and a sprinkling of caster sugar, toss and leave to macerate while the cake bakes.</p> <p>Once the cake is out of the oven, pierce the top all over with a skewer, then drizzle with the syrup. Leave to cool in the tin for 10 minutes, then run a butter knife around the edge to loosen, turn out on to a rack and leave to cool. Slice and serve with the strawberries and more clotted cream on the side.</p> <h2>And for the rest of the week …</h2> <p>Mash leftover strawberries in the elderflower drizzle and lemon zest and stir through vanilla ice-cream, or make a quick vanilla, elderflower and strawberry chia jam for a batch of fresh scones.</p>",
-               "thumbnail":"https://media.guim.co.uk/59a765b09fa3bb95c0d60705077fdab4900d2152/0_2784_5792_3475/500.jpg"
+    "response":{
+        "status":"ok",
+        "userTier":"developer",
+        "total":7978,
+        "startIndex":1,
+        "pageSize":5,
+        "currentPage":1,
+        "pages":1596,
+        "orderBy":"newest",
+        "results":[
+            {
+                "id": "food/2021/jun/07/thomasina-miers-recipe-clotted-cream-cake-elderflower-drizzle-macerated-strawberries",
+                "type": "article",
+                "sectionId": "food",
+                "sectionName": "Food",
+                "webPublicationDate": "2021-06-07T12:00:07Z",
+                "webTitle": "Thomasina Miers’ recipe for  clotted cream drizzle cake with macerated strawberries | The simple fix",
+                "webUrl": "https://www.theguardian.com/food/2021/jun/07/thomasina-miers-recipe-clotted-cream-cake-elderflower-drizzle-macerated-strawberries",
+                "apiUrl": "https://content.guardianapis.com/food/2021/jun/07/thomasina-miers-recipe-clotted-cream-cake-elderflower-drizzle-macerated-strawberries",
+                "fields": {
+                    "headline": "Thomasina Miers’ recipe for  clotted cream drizzle cake with macerated strawberries",
+                    "trailText": "Serve this jammy, creamy cake as an extremely English alternative to scones ",
+                    "byline": "Thomasina Miers",
+                    "body": "<p>When I was little, clotted cream was a rare treat. I remember once, when my uncle came back from Devon with two precious pots of the stuff for us, I immediately set to baking a batch of scones, which we ate warm from the oven with jam, lashings of that amazing cream and butter (to this day, I always have my scones with cream <em>and</em> butter). So it was with delight, many years later on a blistering hot day in Tlacotalpan, Mexico, that I came across a woman selling a basket of cakes made from clotted cream. I can still taste them as I write this.</p> <h2>Clotted cream loaf cake with elderflower drizzle and macerated strawberries</h2> <p>Elderflower, vanilla, strawberries and lemon in a squidgy, almond, creamy loaf cake.</p> <p>Prep <strong>30 min</strong><br>Cook <strong>1 hr</strong><br>Serves <strong>10-12</strong></p> <p><strong>200g butter</strong>, softened, plus extra to grease<br><strong>200g caster sugar</strong>,<strong> </strong>plus extra to macerate the strawberries<strong><br>1 tsp vanilla essence<br>4 eggs<br>150ml clotted cream</strong>,<strong> </strong>plus extra to serve<strong> <br>1 lemon</strong>, zested and juiced<strong><br>150g plain spelt flour<br>100g ground almonds<br>½ tsp salt<br>1</strong><strong>½ tsp baking powder<br>300g strawberries</strong></p> <p>For the drizzle<strong><br>100ml elderflower cordial</strong><strong><br>2 tsp caster sugar</strong></p> <p>Heat the oven to 170C (150C fan)/325F/gas 3. Grease a 1½lb loaf tin. Put the butter, sugar and vanilla in a bowl and, using an electric hand whisk, beat until pale, light and creamy. Add the eggs one at a time, incorporating each one before adding the next. Whisk in the cream and lemon zest, then fold in the flour, ground almonds, salt and baking powder.</p> <p>Transfer to the greased tin, smooth out the top and bake for one hour, until a skewer comes out clean when inserted into the centre.</p> <p>Meanwhile, heat the cordial and sugar in a small pan and, once the sugar dissolves, take off the heat and stir in the juice of half the lemon. If the cordial is homemade, you may need a little more sugar.</p> <p>Hull the strawberries and put in a bowl. Add the remaining lemon juice and a sprinkling of caster sugar, toss and leave to macerate while the cake bakes.</p> <p>Once the cake is out of the oven, pierce the top all over with a skewer, then drizzle with the syrup. Leave to cool in the tin for 10 minutes, then run a butter knife around the edge to loosen, turn out on to a rack and leave to cool. Slice and serve with the strawberries and more clotted cream on the side.</p> <h2>And for the rest of the week …</h2> <p>Mash leftover strawberries in the elderflower drizzle and lemon zest and stir through vanilla ice-cream, or make a quick vanilla, elderflower and strawberry chia jam for a batch of fresh scones.</p>",
+                    "thumbnail": "https://media.guim.co.uk/59a765b09fa3bb95c0d60705077fdab4900d2152/0_2784_5792_3475/500.jpg"
+                },
+                "tags": [
+                    {
+                        "id": "food/series/the-simple-fix",
+                        "type": "series",
+                        "sectionId": "food",
+                        "sectionName": "Food",
+                        "webTitle": "The simple fix",
+                        "webUrl": "https://www.theguardian.com/food/series/the-simple-fix",
+                        "apiUrl": "https://content.guardianapis.com/food/series/the-simple-fix",
+                        "references": [],
+                        "description": "<p>Easy and delicious meals by Thomasina Miers</p>"
+                    },
+                    {
+                        "id": "food/series/thomasina-miers-recipes",
+                        "type": "series",
+                        "sectionId": "food",
+                        "sectionName": "Food",
+                        "webTitle": "Thomasina Miers recipes",
+                        "webUrl": "https://www.theguardian.com/food/series/thomasina-miers-recipes",
+                        "apiUrl": "https://content.guardianapis.com/food/series/thomasina-miers-recipes",
+                        "references": []
+                    }
+                ],
+                "isHosted": false,
+                "pillarId": "pillar/lifestyle",
+                "pillarName": "Lifestyle"
             },
-            "isHosted":false,
-            "pillarId":"pillar/lifestyle",
-            "pillarName":"Lifestyle"
-         },
-         {
-            "id":"food/2021/jun/07/rachel-roddy-recipe-fried-cheese-honey-oregano-vinegar",
-            "type":"article",
-            "sectionId":"food",
-            "sectionName":"Food",
-            "webPublicationDate":"2021-06-07T10:00:05Z",
-            "webTitle":"Rachel Roddy’s recipe for fried cheese with honey, oregano and vinegar | A kitchen in Rome",
-            "webUrl":"https://www.theguardian.com/food/2021/jun/07/rachel-roddy-recipe-fried-cheese-honey-oregano-vinegar",
-            "apiUrl":"https://content.guardianapis.com/food/2021/jun/07/rachel-roddy-recipe-fried-cheese-honey-oregano-vinegar",
-            "fields":{
-               "headline":"Rachel Roddy’s recipe for fried cheese with honey, oregano and vinegar",
-               "trailText":"Melted, stringy cheese doused in a honey, vinegar and oregano dressing with just a hint of chilli: devour with bread and make the neighbours jealous",
-               "byline":"Rachel Roddy",
-               "body":"<p><em>Caciocavallo</em> is a <em>formaggio a pasta filata</em>, or stretched-curd cheese, and part of the family that includes mozzarella, scamorza, provolone and halloumi. To make it, cow’s milk curds are kneaded and stretched by hand in hot water until they look like a fabulously long scarf of white putty. The process at this point, by the way, is almost exactly the same as that of mozzarella, for which the lengths are squeezed into balloon-like balls and<em> mozzate</em> (cut). However, for <a href=\"https://cheese.com/caciocavallo/\">caciocavallo</a>, the stretched lengths are rolled into balls, then soaked in brine before being bound with rope in pairs, neck to neck, and hung to mature <em>a cavallo</em>, or<em> </em>straddled over a beam or pole. Some say this position provides the name, but there are several other legends.</p> <p>Hanging also exaggerates the shape, which is like a pear or teardrop. Or a Japanese<a href=\"https://mykombini.com/en/14820-spirited-away-ookiku-yurayura-okiagari-koboshi-ensky-4970381454722.html\"> okiagari-koboshi</a>, a roly-poly toy that, regardless of how hard you try, always returns to an upright position when it’s knocked over – a symbol of perseverance and resilience, which seem particularly useful qualities these days. When it is young (one to three months), caciocavallo is pale, tender, bounces like a child’s cheek if you squeeze it, and has a mild and milky flavour. As it ages, it firms up and the flavour gets deeper, nuttier and almost spicy. All ages can be eaten just so, grated or cubed for cooking, and are suitable for this week’s recipe, <em>cacio all’argentiera</em> (cheese silversmith-style), as are the rest of the family (mozzarella, scamorza, provolone, halloumi …). There is a legend – of course – that the dish was invented in <a href=\"https://www.google.com/maps/place/Via+Argenteria,+90133+Palermo+PA,+Italy/@38.1176131,13.3640269,20z/data=!4m5!3m4!1s0x1319e5f4a7bb7421:0xcb564fa40cb39de4!8m2!3d38.1176332!4d13.3642576\">via dell’Argenteria</a> in Palermo by the wife of a silversmith who couldn’t afford rabbit, so created a dish with an equally enviable smell. The smell is pretty extraordinary, as oregano – which is at its very best here, warm and wild – meets the sweetness of honey, acidity of vinegar and just a bit of chilli, then all of them settle into the folds of melted cheese.</p> <p>Some recipes for <em>cacio all’argentiera</em> suggest that the slices of cheese should remain intact and have a deep, golden crust, but I am not sure how this is compatible with the cheese melting properly, which is vital if the other ingredients are going to mingle and sink in. And surely a melted mess is part of the pleasure – scooping the chaos of cheese with a corner of bread, or a chip. For me, this dish is Sicily in the summer: cooking dinner on our carpark-flat roof in the middle of Gela, drinking cheap, cold wine and baking cheese on a barbecue whose thin legs look as if they really should buckle, but never do – and making the neighbours jealous with the enticing smell, apparently.</p> <h2><strong>Fried cheese with honey, oregano and vinegar</strong></h2> <p>Prep <strong>5 min</strong><br>Cook<strong> 10 min</strong><br>Serves<strong> 4 as starter or sharing dish, 2 as a main course<br><br></strong><strong>1 tbsp runny honey<br></strong><strong>1-2 tbsp red-wine vinegar <br>1 </strong><strong>big pinch dried oregano<br>1 </strong><strong>pinch </strong><strong>red chilli flakes<br>1 </strong><strong>pinch </strong><strong>salt<br>Olive oil<br>4 x 5-6mm-thick slices </strong><strong>caciocavallo, scamorza, provola, or 8 </strong><strong>slices halloumi</strong></p> <p>In a small bowl, whisk the honey, vinegar, oregano, chilli and salt with a fork.</p> <p>In a pan, warm a little olive oil over a medium heat, then add the slices of cheese and cook for three minutes, or until a light crust has formed. Using a spatula, turn over (don’t worry if it sticks a bit) and cook for another three minutes, so the slices are bubbling gently and, while not completely collapsed, considerably melted.</p> <p>Pour the honey mixture over the cheese, leave to bubble for 10 seconds, then turn off the heat, cover and leave for a minute before serving.</p> <p>To make this on a barbecue, take a double layer of foil and crunch up the edges to create a lip. Rub the inside of the package with olive oil and put on a coolish area of the barbecue for a minute, then lay in the cheese and cook until bubbling. Pour over the honey mixture and leave to bubble for a couple of minutes more before serving.</p>",
-               "thumbnail":"https://media.guim.co.uk/ca2923cf4ec5eae8eaab681dc0d170144d80f517/0_0_8019_4813/500.jpg"
+            {
+                "id": "food/2021/may/24/rachel-roddys-recipe-for-lamb-and-peas",
+                "type": "article",
+                "sectionId": "food",
+                "sectionName": "Food",
+                "webPublicationDate": "2021-05-24T10:00:56Z",
+                "webTitle": "Rachel Roddy’s recipe for lamb and peas",
+                "webUrl": "https://www.theguardian.com/food/2021/may/24/rachel-roddys-recipe-for-lamb-and-peas",
+                "apiUrl": "https://content.guardianapis.com/food/2021/may/24/rachel-roddys-recipe-for-lamb-and-peas",
+                "fields": {
+                    "headline": "Rachel Roddy’s recipe for lamb and peas",
+                    "trailText": "A rustic and comforting stew of lamb cooked in a white wine sauce and studded with peas",
+                    "byline": "Rachel Roddy",
+                    "body": "<p>There is nothing new about tables outside restaurants, but not like this. Small clusters of tables are now swarms, and single rows three deep, while ping-pong table-sized decks have quadrupled in size and commercial umbrella manufacturers must be doing very well indeed. It has been interesting to see how all the different<em> locali </em>– bars, <em>trattorie</em>, <em>pizzerie</em> – have responded to the provisional permission to occupy all available space in front of their establishments until the end of the year. Some have constructed elegant platforms with parquet or matt grey decking, and furnished them with steady tables and padded chairs. I am keener on resourcefulness, my favourite being the trattoria that spread artificial turf over a large segment of bumpy road and put plastic picnic tables on it, which last only a few days<strong>, </strong>but will live long in the memory.</p> <p>I imagine the owners are wandering around looking at their neighbours’ set-ups, sniffing out who has more seats or invested in bigger umbrellas. I wonder who is cooperating, and who is cursing those with a wide pavement and five parking spaces. One thing is certain, and not just in Rome: it is the most beautiful sight to see all this temporary inside-out, to see things back open and people sitting at well-spaced tables, whether on tarmac, decking or pea-green fake grass.</p> <p>Sadly, there is no fake grass in this week’s recipe. There are peas, though – fresh or frozen – and pieces of lamb, cooked in a dish known as <em>abbacchio in spezzatino con piselli</em> or, simply, <em>spezzatino con piselli.</em> Whatever you choose to call it, the dish is a bit of stove alchemy. The <a href=\"https://en.wikipedia.org/wiki/Treccani\">encyclopedia Treccani</a>’s description of spezzatino is satisfying, because it both sums up the process neatly and, at the same time, offers a world of possibilities (there is a recipe-writing lesson here). Pardon my translation, but it goes something like this: “Spezzatino,<em> s, m</em> (derives from <em>spezzare</em>, to break); a simple dish made in homes, consisting of small pieces of meat, maybe floured, browned in a pan with oil or butter, then wet with wine, tomato, salt, pepper and various herbs, and left to cook over a low flame, with the subsequent addition of celery, carrot, onions, potatoes or peas. The best cut of lamb for this is shoulder, and the best place to buy that is from a butcher who works with a good farmer or, better still, direct from the farmer.”</p> <p>I have intentionally left the pea cooking time wide open, because so much depends on both the peas and you. If you are using fresh peas that are very tender and tiny, and you would like them to stay that way, they will need only a few minutes, while starchy ones will need longer. However, if, like me, you want the peas to absorb lots of flavour and not only don’t mind, but actively like, that they go muggy green, they can have 15-20 minutes in with the meat. I also think this dish is better after a rest, in which case the peas are even more muggy and delicious, especially when served with boiled new potatoes or a doorstop of bread, and even more so if eaten inside out. <br></p> <h2><strong>Lamb and peas (</strong><em><strong>Abbacchio in spezzatino con piselli</strong></em><strong>)</strong></h2> <p>Prep <strong>10 min<br></strong>Cook <strong>50 min</strong><br>Serves <strong>4</strong></p> <p><strong>2 tbsp olive oil</strong><br><strong>800g boneless lamb shoulder</strong>, cut into 3cm chunks <br><strong>Salt and black pepper<br>1 tbsp flour<br></strong><strong>1 garlic clove</strong>,<strong> </strong>peeled and<strong> </strong>minced<strong> </strong><br><strong>2 </strong><strong>sprigs </strong><strong>rosemary</strong>, one picked and leaves minced, the other left whole<br><strong>100ml red-wine vinegar<br>200ml white wine</strong>, plus extra to taste<strong> <br>300g peas </strong>(fresh or frozen)</p> <p><br>In a heavy-based pan or casserole, warm the oil over a medium-low heat and, working in batches, brown the lamb on all sides.</p> <p>Put all the browned meat back in the pan, add a pinch of salt and a few grinds of pepper, the flour, garlic, the minced rosemary and the whole sprig, and stir well. Pour over the vinegar and white wine, and stir again. Bring up to a lively simmer, then reduce to a steady one, cover and leave to bubble gently for 35-45 minutes; lift the lid every now and then to check there is enough liquid, and top up with wine or water, if necessary.</p> <p>In the last five to 20 minutes of cooking, add the peas and a little more wine if you think it’s needed to cook the peas and make sure the final dish is softly saucy.</p>",
+                    "thumbnail": "https://media.guim.co.uk/05b7db8ba4ac0656f91ed819c2abd50bb84e3204/0_1180_8031_4820/500.jpg"
+                },
+                "tags": [
+                    {
+                        "id": "food/series/a-kitchen-in-rome",
+                        "type": "series",
+                        "sectionId": "food",
+                        "sectionName": "Food",
+                        "webTitle": "A kitchen in Rome",
+                        "webUrl": "https://www.theguardian.com/food/series/a-kitchen-in-rome",
+                        "apiUrl": "https://content.guardianapis.com/food/series/a-kitchen-in-rome",
+                        "references": [],
+                        "description": "<p>Rachel Roddy dispatches weekly from her kitchen in Rome, where seasonal ingredients are worked into an everyday dish you can adapt easily and quickly</p>"
+                    }
+                ],
+                "isHosted": false,
+                "pillarId": "pillar/lifestyle",
+                "pillarName": "Lifestyle"
             },
-            "isHosted":false,
-            "pillarId":"pillar/lifestyle",
-            "pillarName":"Lifestyle"
-         },
-         {
-            "id":"food/2021/jun/05/how-to-use-up-wilted-or-bolted-lettuce-recipe-zero-waste-tom-hunt",
-            "type":"article",
-            "sectionId":"food",
-            "sectionName":"Food",
-            "webPublicationDate":"2021-06-05T05:00:01Z",
-            "webTitle":"How to use up wilted or bolted lettuce – recipe | Waste not…",
-            "webUrl":"https://www.theguardian.com/food/2021/jun/05/how-to-use-up-wilted-or-bolted-lettuce-recipe-zero-waste-tom-hunt",
-            "apiUrl":"https://content.guardianapis.com/food/2021/jun/05/how-to-use-up-wilted-or-bolted-lettuce-recipe-zero-waste-tom-hunt",
-            "fields":{
-               "headline":"How to use up wilted or bolted lettuce – a recipe for cheesy gratin",
-               "trailText":"Lettuce that’s bolted or gone to seed can often be bitter, so treat it like chicory and enjoy in a creamy, cheesy gratin",
-               "byline":"Tom Hunt",
-               "body":"<p>Last year, on a <a href=\"https://www.sdg2advocacyhub.org/chefmanifesto\">Chef’s Manifesto</a> trip to Kew Gardens, we met the horticulturist <a href=\"http://helenadove.com/\">Helena Dove</a> in the kitchen gardens, where she told us about how the changing climate and shifting weather patterns are creating new challenges for farmers – for example, as the summers get hotter, and heatwaves more common, plants will <a href=\"https://www.thespruce.com/why-do-plants-bolt-2539753\">bolt</a> and flower much more easily. This is a particular issue with leafy greens such as lettuce, spinach and cabbage, which need to be harvested before they shoot up. Dove gets around the problem by growing <a href=\"https://www.theguardian.com/food/2019/oct/13/cooking-with-celtuce-the-supermodel-of-vegetables\">celtuce</a> (AKA asparagus lettuce) as part of her crop rotation because, unlike other lettuces, this thick-stemmed member of the family can still be harvested after it has bolted with little effect on flavour.</p> <p>Fortunately, both wilted and bolted lettuce are great to cook with, and will work alongside, or replace, leafy greens in any dish that calls for them. Bolted lettuce can sometimes be a little bitter, but, like chicory, it’s also wonderful barbecued, pan roasted or in a cheesy gratin.</p> <h2>Pea and lettuce gratin</h2> <p>Each growing season, when the sun heats up, the lettuce on our veg patch bolts, shooting up towards the sky in its determination to reproduce. We always allow some of them to “flower”, to provide food for the bees, and the rest we cook like chicory, baking it into cheesy gratins or barbecuing it over hot coals. This dish works well with both wilted or bolted lettuce. Another simple dish to make with limp or bolted lettuce is the classic <em>petits pois à la </em><em>f</em><em>rançaise</em> – simply saute roughly chopped lettuce and spring onions in butter with peas and a touch of garlic, then finish with a touch of stock.</p> <p><strong>150ml hot stock</strong> (vegetable, chicken or beef), or water<br><strong>150ml double cream</strong> (or a non-dairy alternative)<br><strong>40g butter</strong>, or 40ml extra-virgin olive oil <br><strong>3 spring onions</strong>, roughly chopped<strong><br>100g peas</strong> (fresh or frozen)<br><strong>150g lettuce</strong> (whole ones work best), cut into wedges or large pieces<br><strong>1 small garlic clove</strong>, peeled and roughly chopped<br><strong>Salt and black pepper<br>Grated parmesan</strong> (or a non-dairy alternative), to finish</p> <p>Put the stock and cream in a saucepan, bring to a boil, then simmer until reduced by half. Melt the butter in a frying pan over a high heat, add the spring onions, peas and lettuce, and saute, stirring occasionally, for three minutes, until the lettuce begins to wilt but still has some bite. Stir in the garlic, saute for a minute more, then pour in the cream mix and season to taste. Sprinkle generously with grated parmesan, place under a very hot grill for three minutes, until it browns and bubbles, then remove and serve hot.</p>",
-               "thumbnail":"https://media.guim.co.uk/e8132a7db3d2df6f49b15012412e4e068e8b1e1f/0_80_2048_1229/500.jpg"
+            {
+                "id": "food/2021/may/24/birthday-custard-sponge-by-nigella-lawson",
+                "type": "article",
+                "sectionId": "food",
+                "sectionName": "Food",
+                "webPublicationDate": "2021-05-24T07:00:54Z",
+                "webTitle": "Birthday custard sponge by Nigella Lawson",
+                "webUrl": "https://www.theguardian.com/food/2021/may/24/birthday-custard-sponge-by-nigella-lawson",
+                "apiUrl": "https://content.guardianapis.com/food/2021/may/24/birthday-custard-sponge-by-nigella-lawson",
+                "fields": {
+                    "headline": "Birthday custard sponge by Nigella Lawson",
+                    "trailText": "The decorating is as easy as the baking in this custard-flavoured celebration cake",
+                    "byline": "Nigella Lawson",
+                    "body": "<p>When my children were little, this was a very popular cake, and it’s not just nostalgia that makes me cook it still. Adding cornflour along with the plain flour makes for a wonderfully light and tender sponge, but it is definitely one of those cakes that needs to be eaten on the day it’s made. And while it’s the perfect, smile-inducing birthday cake, I often make it without sprinkling hundreds and thousands – just the dark gleaming icing that drapes over the top and drips thickly down the sides – for an anytime treat for older eaters.</p> <p><em><strong>Makes up to 12 small slices</strong></em><em><strong><br>For the sponge</strong></em><strong><br>plain flour</strong> 200g <br><strong>eggs</strong> 4<br><strong>Bird’s custard powder </strong>3 tbsp <br><strong>soft butter</strong> 225g <br><strong>baking powder</strong> 2 tsp <br><strong>caster sugar</strong> 200g <br><strong>bicarbonate of soda</strong> ½ tsp <br><strong>milk</strong> 2-3 tbsp</p> <p><em><strong>F</strong></em><em><strong>or the buttercream filling</strong></em><br><strong>icing sugar</strong> 125g <br><strong>soft unsalted butter</strong> 75g <br><strong>Bird’s custard powder</strong> 4 tsp <br><strong>boiling water</strong> 1½ tsp</p> <p><em><strong>F</strong></em><em><strong>or the chocolate icing</strong></em><br><strong>water</strong> 60ml <br><strong>dark chocolate </strong>175g <br><strong>golden syrup</strong> 2 tbsp <br><strong>hundreds and thousands</strong> 1-2 tbsp <br><strong>caster sugar </strong>125g, or use 50g if using milk chocolate</p> <p>Make sure everything you need is at room temperature before you start. Preheat the oven to 160C fan/gas mark 4, and butter and line two 20cm sandwich tins.</p> <p>Put all of the above ingredients, except the milk, into a food processor. Process to a smooth batter, and then add the milk a tablespoon at a time to make a soft dropping consistency. Divide between the two cake tins and bake for 20 minutes. The cakes will have risen and feel spookily puffy; this is because of the cornflour in the custard powder.</p> <p>Let the tins sit on a cooling rack for 5 minutes and then turn them out on to the rack, peeling away the paper.</p> <p>To make the buttercream filling, process the icing sugar and custard powder to get rid of any lumps, and then add the butter, processing again to make the buttercream come together. Feed the boiling water down the funnel with the motor running to make the filling easier to spread. Then sandwich the cooled sponges together with the custardy buttercream.</p> <p>To make the chocolate icing, combine the water, syrup and sugar in a saucepan, stirring to dissolve over a low heat. Let it come to the boil and then take it off the heat.</p> <p>Break up the chocolate into small pieces if you are not using chocolate buttons (as I do for cooking, but good quality not confectionary standard), and then add to the pan, swirling it around to cover in the hot liquid. Leave to melt for a few minutes, and then whisk the icing to make it smooth and shiny. Pour over the buttercream filled cake, letting it drip down the sides, and then sprinkle generously with the hundreds and thousands before the icing sets.</p> <p>Prong with candles, light them and sing.</p> <p><em>From <a href=\"https://guardianbookshop.com/feast-9780701189198.html?utm_source=editoriallink&amp;amp;utm_medium=merch&amp;amp;utm_campaign=article\" title=\"\">Feast</a> by Nigella Lawson (</em><em>Chatto &amp; Windus, £30)</em></p>",
+                    "thumbnail": "https://media.guim.co.uk/826b0c0435488cdf2268011ef92a1c234c255801/0_639_2350_1410/500.jpg"
+                },
+                "tags": [
+                    {
+                        "id": "food/series/observer-monthly-20-best-recipes",
+                        "type": "series",
+                        "sectionId": "food",
+                        "sectionName": "Food",
+                        "webTitle": "Observer Food Monthly's 20 best recipes",
+                        "webUrl": "https://www.theguardian.com/food/series/observer-monthly-20-best-recipes",
+                        "apiUrl": "https://content.guardianapis.com/food/series/observer-monthly-20-best-recipes",
+                        "references": [],
+                        "description": "<p>The OFM team present the best meat, fish, vegetarian and dessert recipes.</p>"
+                    }
+                ],
+                "isHosted": false,
+                "pillarId": "pillar/lifestyle",
+                "pillarName": "Lifestyle"
             },
-            "isHosted":false,
-            "pillarId":"pillar/lifestyle",
-            "pillarName":"Lifestyle"
-         },
-         {
-            "id":"food/2021/jun/02/how-to-make-fruit-fool-recipe-felicity-cloake-masterclass",
-            "type":"article",
-            "sectionId":"food",
-            "sectionName":"Food",
-            "webPublicationDate":"2021-06-02T11:00:39Z",
-            "webTitle":"How to make fruit fool – recipe | Felicity Cloake's masterclass",
-            "webUrl":"https://www.theguardian.com/food/2021/jun/02/how-to-make-fruit-fool-recipe-felicity-cloake-masterclass",
-            "apiUrl":"https://content.guardianapis.com/food/2021/jun/02/how-to-make-fruit-fool-recipe-felicity-cloake-masterclass",
-            "fields":{
-               "headline":"How to make fruit fool – a recipe to make with children",
-               "trailText":"There are essentially four main steps to this popular dessert: chop fruit, cook fruit, whip cream and combine (unless you count devour greedily)",
-               "byline":"Felicity Cloake",
-               "body":"<p>You’d have to be a fool yourself not to make fool your go-to pudding at this time of year – not only is it delicious, it’s also stupidly quick and easy to knock up, which means it’s just the thing to make with young children. You can make it with just about any fruit you like, turn it vegan, dress it up for a special occasion or make it so healthy, you could even have it for breakfast. Fool: it’s surprisingly clever stuff.</p> <p>Prep <strong>15 min, + cooling</strong><br>Cook <strong>15 min<br></strong>Serves <strong>4</strong></p> <p><strong>450g rhubarb</strong>, or other seasonal fruit (see step 1)<br><strong>5 tbsp sugar</strong><br><strong>300ml double cream</strong>, chilled<br><strong>100ml Greek yoghurt</strong>, chilled (optional; see step 6)</p> <h2>1 Pick your fruit</h2>  <figure class=\"element element-image\" data-media-id=\"a6bb6e1ca6f68a26d14c4a99f07eed5d7cdca14d\"> <img src=\"https://media.guim.co.uk/a6bb6e1ca6f68a26d14c4a99f07eed5d7cdca14d/0_170_10328_6726/1000.jpg\" alt=\"Felicity Cloake’s easy fruit fool for Feast kids issue 01\" width=\"1000\" height=\"651\" class=\"gu-image\" /> </figure>  <p>It’s still early summer, so I’ve suggested rhubarb, but you can use your own favourite fruit. Most don’t even need cooking (see step 5), but of those that do, you can swap gooseberries, fresh currants or apples for the rhubarb, or use apricots, peaches or plums that aren’t quite ripe enough to eat raw. Add sugar to taste, because different fruits need different amounts.</p> <h2>2 Chop the fruit and add sugar</h2>  <figure class=\"element element-image\" data-media-id=\"fbc547c89ab50f4a4e24666e78dbb7dd98db1fa0\"> <img src=\"https://media.guim.co.uk/fbc547c89ab50f4a4e24666e78dbb7dd98db1fa0/0_710_7635_5550/1000.jpg\" alt=\"Felicity Cloake’s easy fruit fool for Feast kids issue 02\" width=\"1000\" height=\"727\" class=\"gu-image\" /> </figure>  <p>Roughly chop the rhubarb into short sections (there’s no need to chop up currants or berries, but you’ll need to chop and stone peaches, etc), then put in a medium pan with four tablespoons of sugar.</p> <p>Caster sugar melts nice and quickly, but any sort will work (brown sugar has a particularly nice flavour), or use honey or golden syrup instead.</p>  <figure class=\"element element-image\" data-media-id=\"29e19fcbf5b2c4b42ab8d0f7ef2799c6a50f07ae\"> <img src=\"https://media.guim.co.uk/29e19fcbf5b2c4b42ab8d0f7ef2799c6a50f07ae/0_488_10328_6613/1000.jpg\" alt=\"Felicity Cloake’s easy fruit fool for Feast kids issue 03\" width=\"1000\" height=\"640\" class=\"gu-image\" /> </figure>  <h2>3 Alternative sweeteners</h2> <p>If you like, swap out some of the sugar for a flavoured syrup: rhubarb works well with half sugar, half ginger syrup (from a jar of stem ginger), while gooseberries are lovely with elderflower cordial, but play around with what you have to hand. If you’re feeling adventurous, you could also add some finely grated orange or lemon zest, or some fresh ginger, to the pan.</p> <h2>4 Cook the fruit</h2>  <figure class=\"element element-image\" data-media-id=\"1ec59ca7f8da6383aa8027e7f138bf7872b5b44b\"> <img src=\"https://media.guim.co.uk/1ec59ca7f8da6383aa8027e7f138bf7872b5b44b/0_648_10328_6181/1000.jpg\" alt=\"Felicity Cloake’s easy fruit fool for Feast kids issue 04\" width=\"1000\" height=\"598\" class=\"gu-image\" /> </figure>  <p>Put the pan on a medium-low heat and cover. Cook until the fruit is tender and you can pierce it easily with a fork, then take off the lid, turn up the heat slightly and leave it to bubble away until some of the juice has evaporated – don’t worry if rhubarb disintegrates or berries burst.</p> <h2>5 Drain and cool</h2>  <figure class=\"element element-image\" data-media-id=\"335e516b7b71c8071a9da6f8e0989807fab3b03c\"> <img src=\"https://media.guim.co.uk/335e516b7b71c8071a9da6f8e0989807fab3b03c/0_579_10328_6340/1000.jpg\" alt=\"Felicity Cloake’s easy fruit fool for Feast kids issue 05\" width=\"1000\" height=\"614\" class=\"gu-image\" /> </figure>  <p>Taste the cooked fruit, remembering that it will be hot, and add more sugar, if need be. Pour into a sieve set above a bowl to catch the juices, then leave to cool. If you’re using fruit that doesn’t need cooking, remove any stems or stones, roughly chop it if it’s big, then mash to a chunky puree with a fork and stir in the sugar (icing sugar is best here).</p> <h2>6 Whip the cream…</h2>  <figure class=\"element element-image\" data-media-id=\"6fca63d5387c85b2ce3e6994c668e52d736801bd\"> <img src=\"https://media.guim.co.uk/6fca63d5387c85b2ce3e6994c668e52d736801bd/483_306_7127_5501/1000.jpg\" alt=\"Felicity Cloake’s easy fruit fool for Feast kids issue 06\" width=\"1000\" height=\"772\" class=\"gu-image\" /> </figure>  <p>Pour the chilled cream into a large bowl and use a whisk (or electric beaters or a food mixer) to beat it until it stands up in soft, droopy peaks. I mix in a little yoghurt to make the fool a bit lighter, but you can use 400ml cream, or drain off the liquid from 400ml yoghurt to make it really thick and use that instead. Vanilla seeds are a good addition, too.</p> <h2>7 … or a vegan alternative</h2> <p>To make your fool vegan, substitute a mixture of thick, plant-based yoghurt and whippable, plant-based cream for the above, or whizz up 300g drained silken tofu in a food processor until smooth, then fold in 100ml whipped plant-based cream. Brands vary, so you may need to chill it until it solidifies before folding in the fruit.</p> <h2>8 Add the fruit</h2>  <figure class=\"element element-image\" data-media-id=\"99a99591bf8a09c28d88a36fe2ca1ec9c69826a5\"> <img src=\"https://media.guim.co.uk/99a99591bf8a09c28d88a36fe2ca1ec9c69826a5/6030_2613_2788_2955/943.jpg\" alt=\"Felicity Cloake’s easy fruit fool for Feast kids issue 07\" width=\"943\" height=\"1000\" class=\"gu-image\" /> </figure>  <p>Gently fold the cooled fruit into the whipped dairy, so you get a ripple effect, rather than a smooth mixture; take care not to be too rough, or you’ll knock the air out of the cream.</p> <p>Serve at once, preferably in a glass bowl, with the cooking juices in a jug for people to pour on top. Or refrigerate the fool, covered so it doesn’t absorb any other flavours from the fridge, until you’re ready to eat it.</p> <h2>9 Variations</h2> <p>Turn the fool into an Eton mess by folding in crumbled meringue along with the fruit, or mix things up with pieces of biscuit, mini marshmallows, granola, honeycomb, chocolate chunks, caramel sauce, pieces of birthday cake … the only limit is your imagination. To turn your fool into a showstopper, pile it up in a large dish, cover it in hundreds and thousands or edible glitter, and add some birthday candles.</p>",
-               "thumbnail":"https://media.guim.co.uk/99a99591bf8a09c28d88a36fe2ca1ec9c69826a5/907_1371_9060_5438/500.jpg"
+            {
+                "id": "food/2021/may/24/tahini-cake-with-lemon-and-white-chocolate-by-sarit-packer-and-itamar-srulovich",
+                "type": "article",
+                "sectionId": "food",
+                "sectionName": "Food",
+                "webPublicationDate": "2021-05-24T07:00:53Z",
+                "webTitle": "Tahini cake with lemon and white chocolate by Sarit Packer and Itamar Srulovich",
+                "webUrl": "https://www.theguardian.com/food/2021/may/24/tahini-cake-with-lemon-and-white-chocolate-by-sarit-packer-and-itamar-srulovich",
+                "apiUrl": "https://content.guardianapis.com/food/2021/may/24/tahini-cake-with-lemon-and-white-chocolate-by-sarit-packer-and-itamar-srulovich",
+                "fields": {
+                    "headline": "Tahini cake with lemon and white chocolate by Sarit Packer and Itamar Srulovich",
+                    "trailText": "A fudgy, sweet and salty showstopper to add the wow factor to any party table",
+                    "byline": "Sarit Packer and Itamar Srulovich",
+                    "body": "<p>We are recipe-hunters. Our flat is filled with bits of paper scribbled with rudimentary instructions from friendly cooks we meet on the way; pages we’ve torn from newspapers and foreign magazines with a picture we like and a recipe we will one day translate; menus with cryptic notes written after drunken dinners (what did we eat that made us write “coriander before and after, also lamb, must try”, and what does it mean?). Our phones are also filled with pictures, not only of dishes we liked but also of recipes we will one day try, in our never-ending search for lovely things to cook, serve and eat.</p> <p>Most of these recipes never get made, but every so often, when we have some headspace and free time, we go through these papers, take recipes to the kitchen and try them. Most will be made once and never be revisited, even if the results were good, because that is not the point of the exercise: whenever you follow a recipe, you follow in someone’s footsteps, getting a glimpse of their mind and their experience, and there is always something interesting to take from that. But then sometimes, rarely, we come across a recipe that is so good, so special, and so right for us, that we return to it again and again, and it becomes part of our experience, our minds.</p> <p>This is one such recipe, found in a drawer in our kitchen, torn from a newspaper – neither of us remembers which one, but it has an American feel because it uses buttermilk and peanut butter.</p> <p>Whoever wrote the recipe said tahini could be used instead, which was all the encouragement we needed. A seemingly simple sponge, not much to look at, but the taste and texture of it are so special, so good – nutty, fudgy, sweet with a savoury touch – that we (and everyone who tried it) fell instantly in love. We added white chocolate and lemon zest to the original recipe, and vanilla cream for show. We bake it almost every day now and know it’ll be part of the Honey &amp; Co cake repertoire for years to come, and now hopefully yours, too.</p> <p><em><strong>Makes a two-tier </strong></em><em><strong>cake fit for kings and a large party</strong></em><br><em><strong>For the cake batter</strong></em><br><strong>caster sugar</strong> 320g <br><strong>plain flour</strong> 350g <br><strong>bicarbonate of soda</strong> 1½ tsp <br><strong>baking powder </strong>1½ tsp <br><strong>table salt</strong> 1 tsp <br><strong>lemons</strong> 2, zested <br><strong>white chocolate</strong> 70g, chopped<br><strong>eggs</strong> 2 <br><strong>vegetable oil</strong> 120ml <br><strong>tahini paste</strong> 230g <br><strong>vanilla pod </strong>seeds of 1, or 1 tbsp pure vanilla essence<br><strong>buttermilk or kefir</strong> 240ml</p> <p><em><strong>For the icing</strong></em><br><strong>mascarpone</strong> 250g <br><strong>double cream </strong>200g <br><strong>full-fat </strong><strong>cream cheese </strong>200g <br><strong>icing sugar</strong> 90g <br><strong>vanilla essence</strong> 1 tbsp, or 1 pod<br><strong>rum</strong> 2 tbsp</p> <p><em><strong>For sprinkling (optional)</strong></em><br><strong>white chocolate </strong>30g, chopped <br><strong>lemon zest</strong> a sprinkling</p> <p>Heat the oven to 170C fan/gas mark 5.</p> <p>Mix all the dry ingredients for the cake batter together in a large bowl. In a smaller one, mix the eggs with the oil, tahini, vanilla and buttermilk. Pour the egg mixture into the dry ingredients and stir to combine. Slowly stir in 180ml boiling water, and mix until well incorporated.</p> <p>Line the base of two 23cm round cake tins with a circle of baking paper and lightly butter the sides. Divide the batter evenly between the two tins and bake in the centre of the oven for 15 minutes. Rotate the tins for an even bake, then cook for another 10-15 minutes. The cakes should feel lovely and bouncy, and have a good, golden colour all over. Remove from the oven and carefully flip onto a flat plate to flatten the tops. Allow to cool upside-down before removing from the tins.</p> <p>Mix all the icing ingredients together with a small whisk until well combined and thickened (you can pop this in an electric mixer, but best to use a paddle attachment to avoid overworking and splitting it). Place the first cake on the serving platter, spoon on half the icing and spread around to cover. Top with the second cake, spoon on the rest of the icing, and spread. If you wish, sprinkle with chopped white chocolate and lemon zest.</p> <p>If serving on the same day as baking, best to avoid putting the cake in the fridge. If you are keeping it for longer, do place it in the fridge but allow it to come to room temperature before serving.</p> <p><em>From <a href=\"https://guardianbookshop.com/honey-co-at-home-9781911595663.html?utm_source=editoriallink&amp;utm_medium=merch&amp;utm_campaign=article\" title=\"\">Honey &amp; Co At Home</a> by Sarit Packer and Itamar Srulovich (Pavilion Books, £26)</em></p>",
+                    "thumbnail": "https://media.guim.co.uk/af6abf127eab968be28816d0b2107b5c404aab94/0_936_2183_1308/500.jpg"
+                },
+                "tags": [
+                    {
+                        "id": "food/series/observer-monthly-20-best-recipes",
+                        "type": "series",
+                        "sectionId": "food",
+                        "sectionName": "Food",
+                        "webTitle": "Observer Food Monthly's 20 best recipes",
+                        "webUrl": "https://www.theguardian.com/food/series/observer-monthly-20-best-recipes",
+                        "apiUrl": "https://content.guardianapis.com/food/series/observer-monthly-20-best-recipes",
+                        "references": [],
+                        "description": "<p>The OFM team present the best meat, fish, vegetarian and dessert recipes.</p>"
+                    }
+                ],
+                "isHosted": false,
+                "pillarId": "pillar/lifestyle",
+                "pillarName": "Lifestyle"
             },
-            "isHosted":false,
-            "pillarId":"pillar/lifestyle",
-            "pillarName":"Lifestyle"
-         },
-         {
-            "id":"food/2021/may/31/thomasina-miers-recipe-ylayuda-pea-hummus-mexican-style-pizza",
-            "type":"article",
-            "sectionId":"food",
-            "sectionName":"Food",
-            "webPublicationDate":"2021-05-31T12:00:22Z",
-            "webTitle":"Thomasina Miers’ recipe for Mexican-style pizza with pea hummus | The simple fix",
-            "webUrl":"https://www.theguardian.com/food/2021/may/31/thomasina-miers-recipe-ylayuda-pea-hummus-mexican-style-pizza",
-            "apiUrl":"https://content.guardianapis.com/food/2021/may/31/thomasina-miers-recipe-ylayuda-pea-hummus-mexican-style-pizza",
-            "fields":{
-               "headline":"Thomasina Miers’ recipe for Mexican-style pizza with pea hummus",
-               "trailText":"Tlayuda is a Mexican street food favourite that’s dry-fried like flatbread, topped like a tortilla and eaten like pizza",
-               "byline":"Thomasina Miers",
-               "body":"<p>Tlayudas (pronounced clah-yoo-dahs) are Mexican-style pizzas cooked over charcoal grills, and are usually eaten late at night on the streets of Oaxaca. There, the dough is made with corn, but here I make my own simple wheat tortillas or, if I’m in a rush, use ready-made ones from the shops. Toasted in a frying pan, topped with a variety of things and finished off under the grill until the cheese is melted and bubbling, they go down incredibly well.</p> <h2>Tlayudas with pea hummus, sun-dried tomatoes and mozzarella</h2> <p>We love the combination of pea hummus and sun-dried tomatoes, but you can spread the tortillas with anything you want, including dulce de leche, bananas and toasted hazelnuts.</p> <p>Prep <strong>10 min</strong><br>Cook <strong>50 min</strong><br>Serves <strong>6-8 children</strong></p> <p><strong>200g peas</strong>, fresh or frozen<strong><br>200g tinned chickpeas</strong>,<strong> </strong>drained and rinsed<br><strong>1 small garlic clove</strong>,<strong> </strong>crushed with a little salt<br><strong>Salt and black pepper<br>3 tbsp olive oil, </strong>plus extra to serve<strong><br>1 tbsp tahini<br></strong><strong>1 big handful fresh mint</strong>, leaves picked, plus extra to serve<strong><br>2 lemons<br>4 large wheat tortillas<br>60g sun-dried tomatoes</strong>,<strong> </strong>roughly chopped<br><strong>100g mozzarella</strong>, grated<strong><br>Parmesan</strong>, to serve (optional)<br><strong>Lettuce</strong>, to serve</p> <p>Make the hummus first. Bring a small pan of water to a boil, drop in the peas and cook for three minutes, until just tender. Drain and run under cold water for 10-20 seconds, to cool.</p> <p>Tip the peas into a food processor, add the chickpeas, garlic, a teaspoon of salt, olive oil, tahini, mint, the juice of one lemon and a tablespoon of water, and season generously. Blitz until nice and smooth, then check the seasoning, adding lemon if it needs more acidity or a little water for a more spoonable consistency.</p> <p>Heat the grill. Meanwhile, lay a tortilla in a large, ovenproof frying pan and turn the heat to medium-low so it warms through gently. Spread a quarter of the hummus all over the surface of the tortilla, then scatter over some sun-dried tomatoes and a quarter of the mozzarella on top. </p> <p>Pop the pan under the hot grill and cook until the cheese has melted, but take care that you do not burn the tortilla.</p> <p>Remove from the grill, scatter over a few mint leaves and parmesan (if using), drizzle with a little oil and cut into slices, much like a pizza. Serve with lemon wedges and a bowl of crisp lettuce while you repeat with the rest of the tortillas and toppings.</p> <h2><strong>And for the rest of the week …</strong></h2> <p>You will have a handful of chickpeas left over: toast them in a separate frying pan with a teaspoon of sweet smoked paprika for a fun extra topping. And, for a proper Mexican finish, try topping the finished tlayudas with some chargrilled spring onions.</p>",
-               "thumbnail":"https://media.guim.co.uk/1a55cd34d92c365ad189c1e23090f3979f24ec43/0_1648_5792_3475/500.jpg"
-            },
-            "isHosted":false,
-            "pillarId":"pillar/lifestyle",
-            "pillarName":"Lifestyle"
-         }
-      ]
-   }
+            {
+                "id": "food/2021/may/24/cardamom-and-carrot-cakes-with-maple-icing-by-anna-jones",
+                "type": "article",
+                "sectionId": "food",
+                "sectionName": "Food",
+                "webPublicationDate": "2021-05-24T07:00:53Z",
+                "webTitle": "Cardamom and carrot cakes with maple icing by Anna Jones",
+                "webUrl": "https://www.theguardian.com/food/2021/may/24/cardamom-and-carrot-cakes-with-maple-icing-by-anna-jones",
+                "apiUrl": "https://content.guardianapis.com/food/2021/may/24/cardamom-and-carrot-cakes-with-maple-icing-by-anna-jones",
+                "fields": {
+                    "headline": "Cardamom and carrot cakes with maple icing by Anna Jones",
+                    "trailText": "Little crowdpleasers, easily adapted to suit all diets, these are super-moist and packed with goodness",
+                    "byline": "Anna Jones",
+                    "body": "<p>I haven’t met anyone who doesn’t like these. These are a crowdpleaser, loved by old, young, boys, girls, junk-food lovers and health freaks alike. This is as close to a cupcake as I get – super-buttery, sugary cupcakes don’t really do it for me. I like something with character and depth. These are what I make if I am taking cakes to a party or to a friend’s for tea. They work well at any time of day, stay super-moist and are packed with goodness.</p> <p>These are free of refined sugar, and sweetened with maple syrup and banana (though you can’t taste it). You can easily make them dairy and gluten free with no compromise on flavour. My favourite version uses coconut oil, instead of butter, and chickpea flour, but you can use butter and plain or spelt flour, if you prefer. Soy cream cheese or very thick yoghurt works for the icing, too.</p> <p>I sometimes swap the carrot for butternut squash, or even a parsnip, so in that sense they are a very wonderful way to use up any lingering roots.</p> <p><em><strong>Makes 12</strong></em><br><em><strong>For the cakes</strong></em><br><strong>butter or coconut oil</strong> 80g <br><strong>maple syrup</strong> 4 tbsp <br><strong>cardamom pods</strong> 4, seeds finely ground in a pestle and mortar<br><strong>ground cinnamon</strong> 1 tsp <br><strong>ground ginger</strong> ½ tsp <br><strong>ground almonds</strong> 150g <br><strong>light spelt or chickpea flour </strong>100g <br><strong>pumpkin seeds</strong> 50g <br><strong>baking powder</strong> 2 tsp <br><strong>carrots</strong> 2 medium, grated<br><strong>banana</strong> 1, peeled and mashed<br><strong>eggs</strong> 3 organic or free-range, beaten</p> <p><em><strong>For the icing</strong></em><br><strong>cream cheese</strong> 200g <br><strong>maple syrup</strong> 4 tbsp <br><strong>ground cinnamon</strong> a pinch <br><strong>ground ginger</strong> a pinch</p> <p><em><strong>To decorate</strong></em><br><strong>unwaxed lime</strong> 1, zested</p> <p>Preheat your oven to 180C fan/gas mark 6. Line a 12-hole muffin tin with paper cases and put to one side.</p> <p>Put the butter or coconut oil and maple syrup into a pan with the spices and let it melt over a low heat. Set aside to cool. Now put the ground almonds, flour, pumpkin seeds and baking powder into a bowl. Add the grated carrot, mashed banana and eggs, then pour in the cooled maple mixture and mix well. Spoon into the paper cases. Bake for 25 minutes, until golden on top and a skewer poked into the cakes comes out clean.</p> <p>While the cakes are cooking, make the icing. Put the cream cheese into a bowl with the maple syrup and spices and beat until light and fluffy. I like to do this with an electric hand whisk, but a wooden spoon works fine, too. Once the cakes are out of the oven and have cooled, thickly spread each one with the icing and finish off with a grating of lime zest.</p> <p><em>From <a href=\"https://guardianbookshop.com/a-modern-way-to-eat-9780007516704.html?utm_source=editoriallink&amp;amp;utm_medium=merch&amp;amp;utm_campaign=article\" title=\"\">A Modern Way to Eat</a> by Anna Jones (HarperCollins, £26)</em></p>",
+                    "thumbnail": "https://media.guim.co.uk/9dccb77bfb1ebb467202e985a9cd3be4d2b970de/0_1671_3713_2228/500.jpg"
+                },
+                "tags": [
+                    {
+                        "id": "food/series/observer-monthly-20-best-recipes",
+                        "type": "series",
+                        "sectionId": "food",
+                        "sectionName": "Food",
+                        "webTitle": "Observer Food Monthly's 20 best recipes",
+                        "webUrl": "https://www.theguardian.com/food/series/observer-monthly-20-best-recipes",
+                        "apiUrl": "https://content.guardianapis.com/food/series/observer-monthly-20-best-recipes",
+                        "references": [],
+                        "description": "<p>The OFM team present the best meat, fish, vegetarian and dessert recipes.</p>"
+                    }
+                ],
+                "isHosted": false,
+                "pillarId": "pillar/lifestyle",
+                "pillarName": "Lifestyle"
+            }
+        ]
+    }
 }
