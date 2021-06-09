@@ -22,6 +22,7 @@
 		E1518FCF266CE68F00068DAB /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1518FCE266CE68F00068DAB /* MockURLProtocol.swift */; };
 		E1518FD2266CFB7800068DAB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E1518FD1266CFB7800068DAB /* Kingfisher */; };
 		E1518FD4266D545300068DAB /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1518FD3266D545300068DAB /* RecipeDetailView.swift */; };
+		E1BB13E82670E24900F013F3 /* Recipe + PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB13E72670E24900F013F3 /* Recipe + PreviewData.swift */; };
 		E1D85D84265BDD5C0048CA35 /* TheFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D85D83265BDD5C0048CA35 /* TheFoodApp.swift */; };
 		E1D85D86265BDD5C0048CA35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D85D85265BDD5C0048CA35 /* ContentView.swift */; };
 		E1D85D88265BDD5E0048CA35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D85D87265BDD5E0048CA35 /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		E1518FCC266CE5AE00068DAB /* GuardianAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianAPITest.swift; sourceTree = "<group>"; };
 		E1518FCE266CE68F00068DAB /* MockURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		E1518FD3266D545300068DAB /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		E1BB13E72670E24900F013F3 /* Recipe + PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe + PreviewData.swift"; sourceTree = "<group>"; };
 		E1D85D80265BDD5C0048CA35 /* TheFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D85D83265BDD5C0048CA35 /* TheFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheFoodApp.swift; sourceTree = "<group>"; };
 		E1D85D85265BDD5C0048CA35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				E12CA254265E85D100FBD136 /* InMemoryRecipesPublisher.swift */,
+				E1BB13E72670E24900F013F3 /* Recipe + PreviewData.swift */,
 				E1D85D8A265BDD5E0048CA35 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -389,6 +392,7 @@
 				E1158225265D467A00241BF9 /* RecipesController.swift in Sources */,
 				E12CA250265E833700FBD136 /* RecipesPublisher.swift in Sources */,
 				E115821E265D3E7700241BF9 /* FrameColor.swift in Sources */,
+				E1BB13E82670E24900F013F3 /* Recipe + PreviewData.swift in Sources */,
 				E1D85D86265BDD5C0048CA35 /* ContentView.swift in Sources */,
 				E115821B265CFAD300241BF9 /* RecipeView.swift in Sources */,
 				E12CA255265E85D100FBD136 /* InMemoryRecipesPublisher.swift in Sources */,
