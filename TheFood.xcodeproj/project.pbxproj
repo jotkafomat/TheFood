@@ -25,6 +25,7 @@
 		E1BB13E82670E24900F013F3 /* Recipe + PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB13E72670E24900F013F3 /* Recipe + PreviewData.swift */; };
 		E1BB13EA2670ED0D00F013F3 /* GuardianAPI + Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB13E92670ED0D00F013F3 /* GuardianAPI + Response.swift */; };
 		E1BB13EC2670ED3A00F013F3 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB13EB2670ED3A00F013F3 /* Tag.swift */; };
+		E1BB13EE2671152900F013F3 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB13ED2671152800F013F3 /* RecipeViewModel.swift */; };
 		E1D85D84265BDD5C0048CA35 /* TheFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D85D83265BDD5C0048CA35 /* TheFoodApp.swift */; };
 		E1D85D86265BDD5C0048CA35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D85D85265BDD5C0048CA35 /* ContentView.swift */; };
 		E1D85D88265BDD5E0048CA35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D85D87265BDD5E0048CA35 /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 		E1BB13E72670E24900F013F3 /* Recipe + PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Recipe + PreviewData.swift"; sourceTree = "<group>"; };
 		E1BB13E92670ED0D00F013F3 /* GuardianAPI + Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GuardianAPI + Response.swift"; sourceTree = "<group>"; };
 		E1BB13EB2670ED3A00F013F3 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		E1BB13ED2671152800F013F3 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
 		E1D85D80265BDD5C0048CA35 /* TheFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D85D83265BDD5C0048CA35 /* TheFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheFoodApp.swift; sourceTree = "<group>"; };
 		E1D85D85265BDD5C0048CA35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				E1158224265D467900241BF9 /* RecipesController.swift */,
+				E1BB13ED2671152800F013F3 /* RecipeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				E115821B265CFAD300241BF9 /* RecipeView.swift in Sources */,
 				E12CA255265E85D100FBD136 /* InMemoryRecipesPublisher.swift in Sources */,
 				E1518FC4266C0DD700068DAB /* GuardianAPI.swift in Sources */,
+				E1BB13EE2671152900F013F3 /* RecipeViewModel.swift in Sources */,
 				E1BB13EA2670ED0D00F013F3 /* GuardianAPI + Response.swift in Sources */,
 				E1D85D84265BDD5C0048CA35 /* TheFoodApp.swift in Sources */,
 				E1BB13EC2670ED3A00F013F3 /* Tag.swift in Sources */,

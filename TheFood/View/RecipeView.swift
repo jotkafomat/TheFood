@@ -10,14 +10,14 @@ import SwiftUI
 
 struct RecipeView: View {
 
-    let recipe: Recipe
+    let recipe: RecipeViewModel
 
     var body: some View {
         Rectangle()
             .aspectRatio(0.97, contentMode: .fit)
-            .foregroundColor(recipe.frameColor.color)
+            .foregroundColor(recipe.color)
             .overlay(
-                KFImage(recipe.thumbnail)
+                KFImage(recipe.image)
                     .resizable()
                     .scaledToFill()
                     .aspectRatio(1, contentMode: .fit)
@@ -26,7 +26,7 @@ struct RecipeView: View {
             )
             .overlay(
                 VStack(alignment: .leading, spacing: 4.0) {
-                    Text(recipe.tags.first?.series ?? recipe.byline)
+                    Text(recipe.tag)
                         .font(.system(.body, design: .serif))
                         .fontWeight(.semibold)
                         .foregroundColor(.black)
@@ -48,10 +48,10 @@ struct RecipeView: View {
 struct RecipeView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            RecipeView(recipe: Recipe.recipes[0])
+            RecipeView(recipe: RecipeViewModel.all[0])
                 .preferredColorScheme(.light)
                 .previewDevice("iPhone 12 Pro Max")
-            RecipeView(recipe: Recipe.recipes[0])
+            RecipeView(recipe: RecipeViewModel.all[0] )
                 .preferredColorScheme(.dark)
                 .environment(\.sizeCategory, .accessibilityMedium)
                 .previewDevice("iPhone 12 Pro Max")

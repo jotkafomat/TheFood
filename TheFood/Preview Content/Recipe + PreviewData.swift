@@ -6,7 +6,9 @@
 //
 
 import Foundation
+
 extension Recipe {
+
     static let recipes = [
         Recipe(
             id: "food/2021/may/24/thomasina-miers-recipe-courgetti-carbonara",
@@ -53,4 +55,10 @@ extension Recipe {
             body: "<p>The combination of oil and melted butter in this recipe yields a really moist sponge. This recipe is for a loaf but you can also make individual mini banana cakes, you will just need to bring the cooking time down to 12-15 minutes.</p> <p><em><strong>Serves 8</strong></em><br><strong>eggs</strong> 3<br><strong>dark brown soft sugar</strong> 130g<br><strong>caster </strong><strong>sugar</strong> 130g <br><strong>grapeseed or vegetable oil </strong>85ml <br><strong>unsalted butter</strong> 85g, melted and slightly cooled<br><strong>bananas</strong> 270g (about 3), overripe and mushy <br><strong>pecan nuts</strong> 100g<br><strong>plain</strong><strong> flour </strong>270g <br><strong>baking powder</strong> 13g <br><strong>fine salt</strong> a pinch<br><strong>ground cinnamon</strong> ½ tsp</p> <p>Preheat the oven to 160C fan/gas mark 4. Grease a 1kg loaf tin with butter and line with baking parchment.</p> <p>Put the eggs and sugars in the bowl of a stand mixer or in a mixing bowl. Beat at a medium speed for 5-7 minutes until thick and fluffy using the whisk attachment or a hand-held electric whisk.</p> <p>Mix together the oil and melted butter and slowly pour into the eggs and sugar, while whisking to incorporate. Fold in the bananas and pecan nuts. Sift together the flour, baking powder, salt and cinnamon, then fold into the batter.</p> <p>Pour the batter into the prepared loaf tin and bake for 45-50 minutes until a skewer inserted comes out clean.</p> <p>Leave to cool slightly in the tin before turning out. This cake is nice and moist and will keep for a good few days in an airtight container at room temperature.</p> <p><em>From <a href=\"https://guardianbookshop.com/the-pastry-chef-s-guide-9781911641513.html?utm_source=editoriallink&amp;amp;utm_medium=merch&amp;amp;utm_campaign=article\" title=\"\">The Pastry Chef’s Guide</a> by Ravneet Gill (Pavilion</em><em>, £18.99)</em></p>",
             tags: [Tag(series: "ood/series/observer-monthly-20-best-recipes")])
     ]
+}
+
+extension RecipeViewModel {
+    static var all: [RecipeViewModel] {
+        Recipe.recipes.map(RecipeViewModel.init)
+    }
 }

@@ -8,16 +8,13 @@
 import SwiftUI
 
 struct RecipeDetailView: View {
-    let recipe: Recipe
+    let recipe: RecipeViewModel
 
-    var displayString: String {
-        recipe.headline.htmlToString
-    }
     var body: some View {
 
         ScrollView {
             HStack {
-                Text(recipe.headline)
+                Text(recipe.displayBody)
             }
             .navigationBarTitleDisplayMode(.inline)
         }
@@ -27,9 +24,10 @@ struct RecipeDetailView: View {
 
 struct RecipeDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeDetailView(recipe: Recipe.recipes[0])
+        RecipeDetailView(recipe: RecipeViewModel.all[0])
     }
 }
+
 extension String {
     var htmlToAttributedString: NSAttributedString? {
         guard let data = data(using: .utf8) else { return nil }
