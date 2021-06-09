@@ -12,10 +12,15 @@ struct ContentView: View {
     @ObservedObject var recipesController: RecipesController
 
     var body: some View {
-        ScrollView(showsIndicators: false) {
-            LazyVStack(spacing: 2.0) {
-                ForEach(recipesController.recipes, id: \.self) { item in
-                    RecipeView(recipe: item)
+        NavigationView {
+            ScrollView(showsIndicators: false) {
+                LazyVStack(spacing: 2.0) {
+                    ForEach(recipesController.recipes) { item in
+                        NavigationLink(
+                            destination: RecipeDetailView(recipe: item)) {
+                                RecipeView(recipe: item)
+                        }
+                    }
                 }
             }
             .navigationBarHidden(true)
