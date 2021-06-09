@@ -15,6 +15,7 @@ struct Recipe {
     let byline: String
     let body: String
     let tags: [Tag]
+    let frameColor = FrameColor.allCases.randomElement()!
 }
 
 extension Recipe: Decodable {

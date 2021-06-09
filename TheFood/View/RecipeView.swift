@@ -11,12 +11,11 @@ import SwiftUI
 struct RecipeView: View {
 
     let recipe: Recipe
-    let frameColor: Color = FrameColor.allCases.randomElement()?.color ?? .purple
 
     var body: some View {
         Rectangle()
             .aspectRatio(0.97, contentMode: .fit)
-            .foregroundColor(frameColor)
+            .foregroundColor(recipe.frameColor.color)
             .overlay(
                 KFImage(recipe.thumbnail)
                     .resizable()
