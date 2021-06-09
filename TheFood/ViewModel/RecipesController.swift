@@ -14,9 +14,6 @@ class RecipesController: ObservableObject {
 
     init(recipesPublisher: RecipesPublisher = GuardianAPI()) {
         self.recipesPublisher = recipesPublisher
-    }
-
-    func getRecipes() {
         recipesPublisher
             .getLatestRecipes()
             .receive(on: RunLoop.main)

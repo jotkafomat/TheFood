@@ -18,9 +18,8 @@ struct ContentView: View {
                     RecipeView(recipe: item)
                 }
             }
-        }
-        .onAppear {
-            recipesController.getRecipes()
+            .navigationBarHidden(true)
+            .ignoresSafeArea()
         }
     }
 }
