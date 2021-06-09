@@ -25,12 +25,22 @@ struct RecipeView: View {
                     .padding(4)
             )
             .overlay(
-                Text(recipe.headline)
-                    .font(.system(.title, design: .serif))
-                    .fontWeight(.semibold)
-                    .foregroundColor(.white)
-                    .background(Color.black)
-                    .padding(.bottom, 4),
+                VStack(alignment: .leading, spacing: 4.0) {
+                    Text(recipe.tags.first?.series ?? recipe.byline)
+                        .font(.system(.body, design: .serif))
+                        .fontWeight(.semibold)
+                        .foregroundColor(.black)
+                        .multilineTextAlignment(.leading)
+                        .padding(.leading, 4)
+                        .padding(.trailing, 4)
+                        .background(Color.white)
+                    Text(recipe.headline)
+                        .font(.system(.title, design: .serif))
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .background(Color.black)
+                        .padding(.bottom, 4)
+                },
                 alignment: .bottomLeading
             )
     }
