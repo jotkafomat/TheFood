@@ -11,7 +11,7 @@ import SwiftUI
 struct TheFoodApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(recipesController: RecipesController(recipesPublisher: InMemoryRecipesPublisher()))
+            ContentView(recipesController: RecipesController())
         }
     }
 }

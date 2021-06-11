@@ -8,7 +8,11 @@
 import Foundation
 
 struct Recipe {
+
+    static let showFields: String = FieldsKeys.allCases.map { $0.rawValue }.joined(separator: ",")
+
     let id: String
+    let firstPublicationDate: Date
     let headline: String
     let thumbnail: URL
     let trailText: String
@@ -23,8 +27,8 @@ extension Recipe: Decodable {
     enum CodingKeys: String, CodingKey {
         case id, fields, tags
     }
-    enum FieldsKeys: String, CodingKey {
-        case headline, thumbnail, trailText, byline, body
+    enum FieldsKeys: String, CodingKey, CaseIterable {
+        case headline, thumbnail, trailText, byline, body, firstPublicationDate
     }
 
     init(from decoder: Decoder) throws {
@@ -37,6 +41,7 @@ extension Recipe: Decodable {
         trailText = try fieldsContainer.decode(String.self, forKey: .trailText)
         byline = try fieldsContainer.decode(String.self, forKey: .byline)
         body = try fieldsContainer.decode(String.self, forKey: .body)
+        firstPublicationDate = try fieldsContainer.decode(Date.self, forKey: .firstPublicationDate)
     }
 }
 

@@ -12,6 +12,7 @@ extension Recipe {
     static let recipes = [
         Recipe(
             id: "food/2021/may/24/thomasina-miers-recipe-courgetti-carbonara",
+            firstPublicationDate: Date(),
             headline: "Thomasina Miers’ recipe for courgetti carbonara",
             thumbnail: URL(string: "https://media.guim.co.uk/793f8c456f5fa74a0f8f789580fecb950a5c2cda/0_3728_5792_3475/500.jpg")!,
             trailText: "Ribbons of courgette are a great way to get more veg into your diet – here, they lend both colour and texture to a dish of garlicky, cheesy pasta",
@@ -21,6 +22,7 @@ extension Recipe {
         ),
         Recipe(
             id: "food/2021/may/24/rachel-roddys-recipe-for-lamb-and-peas",
+            firstPublicationDate: Date(),
             headline: "Rachel Roddy’s recipe for lamb and peas",
             thumbnail: URL(string: "https://media.guim.co.uk/05b7db8ba4ac0656f91ed819c2abd50bb84e3204/0_1180_8031_4820/500.jpg")!,
             trailText: "A rustic and comforting stew of lamb cooked in a white wine sauce and studded with peas",
@@ -30,6 +32,7 @@ extension Recipe {
         ),
         Recipe(
             id: "food/2021/may/24/birthday-custard-sponge-by-nigella-lawson",
+            firstPublicationDate: Date(),
             headline: "Birthday custard sponge by Nigella Lawson",
             thumbnail: URL(string: "https://media.guim.co.uk/826b0c0435488cdf2268011ef92a1c234c255801/0_639_2350_1410/500.jpg")!,
             trailText: "The decorating is as easy as the baking in this custard-flavoured celebration cake",
@@ -39,6 +42,7 @@ extension Recipe {
         ),
         Recipe(
             id: "food/2021/may/24/stout-and-chocolate-cake-with-toasted-oats-by-claire-thomson",
+            firstPublicationDate: Date(),
             headline: "Stout and chocolate cake with toasted oats by Claire Thomson",
             thumbnail: URL(string: "https://media.guim.co.uk/186d6572dbab2134b6cd76aca25a78a59862b62c/0_3179_4474_2684/500.jpg")!,
             trailText: "Chocolate cake is always a great pick-me-up – and one with stout as a main ingredient is even better",
@@ -48,6 +52,7 @@ extension Recipe {
         ),
         Recipe(
             id: "food/2021/may/24/simple-banana-cake-by-ravneet-gill",
+            firstPublicationDate: Date(),
             headline: "Simple banana cake by Ravneet Gill",
             thumbnail: URL(string: "https://media.guim.co.uk/8c0b7e866f0fb9120afa884c4f5b919f63fac7d0/0_2618_6732_4037/500.jpg")!,
             trailText: "A versatile recipe that makes a moist teatime loaf but works equally well as a mini cake",

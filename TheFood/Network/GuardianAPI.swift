@@ -10,24 +10,31 @@ import Foundation
 
 class GuardianAPI: RecipesPublisher {
 
+    static let decoder: JSONDecoder = {
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
+        return decoder
+    }()
+
     private let session: URLSession
     private let baseUrl: URL
 
     init(
         session: URLSession = URLSession.shared,
         baseUrl: URL = URL(
-            string: "https://content.guardianapis.com/search?api-key=438d1261-9311-4def-b60b-36b65295dfa0&page-size=50&tag=tone/recipes&show-fields=headline,trailText,byline,body,thumbnail&show-tags=series")!) {
+            string: "https://content.guardianapis.com/search?api-key=438d1261-9311-4def-b60b-36b65295dfa0&page-size=50&tag=tone/recipes&show-fields=\(Recipe.showFields)&show-tags=series")!) {
         self.session = session
         self.baseUrl = baseUrl
     }
 
     func getLatestRecipes() -> AnyPublisher<[Recipe], Never> {
+
         var request = URLRequest(url: baseUrl)
         request.httpMethod = "GET"
         return session
             .dataTaskPublisher(for: request)
             .map(\.data)
-            .decode(type: Response.self, decoder: JSONDecoder())
+            .decode(type: Response.self, decoder: Self.decoder)
             .map(\.results)
             .catch { _ in Just<[Recipe]>([]) }
             .eraseToAnyPublisher()

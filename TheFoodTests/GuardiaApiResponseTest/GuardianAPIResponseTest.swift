@@ -21,9 +21,7 @@ class GuardianAPIResponseTest: XCTestCase {
         data = nil
     }
     func testInitFromJson() throws {
-        let decoder = JSONDecoder()
-
-        let response = try decoder.decode(GuardianAPI.Response.self, from: data)
+        let response = try GuardianAPI.decoder.decode(GuardianAPI.Response.self, from: data)
 
         XCTAssertEqual(response.results.count, 5)
 
