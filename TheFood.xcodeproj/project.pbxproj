@@ -36,6 +36,8 @@
 		E1F1344F26726A2F00D516CA /* Dividers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F1344E26726A2F00D516CA /* Dividers.swift */; };
 		E1F1345126726A5000D516CA /* RecipeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F1345026726A5000D516CA /* RecipeHeader.swift */; };
 		E1F1345326726A7400D516CA /* ScrollUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F1345226726A7400D516CA /* ScrollUpButton.swift */; };
+		E1F134562673772000D516CA /* Data+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1518FC5266CCF3D00068DAB /* Data+Extenstion.swift */; };
+		E1F1345826737AB600D516CA /* AuthorBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F1345726737AB600D516CA /* AuthorBadgeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,7 @@
 		E1F1344E26726A2F00D516CA /* Dividers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dividers.swift; sourceTree = "<group>"; };
 		E1F1345026726A5000D516CA /* RecipeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHeader.swift; sourceTree = "<group>"; };
 		E1F1345226726A7400D516CA /* ScrollUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollUpButton.swift; sourceTree = "<group>"; };
+		E1F1345726737AB600D516CA /* AuthorBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorBadgeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +257,7 @@
 				E1F1344E26726A2F00D516CA /* Dividers.swift */,
 				E1F1345026726A5000D516CA /* RecipeHeader.swift */,
 				E1F1345226726A7400D516CA /* ScrollUpButton.swift */,
+				E1F1345726737AB600D516CA /* AuthorBadgeView.swift */,
 			);
 			path = RecipeDetailView;
 			sourceTree = "<group>";
@@ -417,6 +421,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1158218265CF8CD00241BF9 /* Recipe.swift in Sources */,
+				E1F1345826737AB600D516CA /* AuthorBadgeView.swift in Sources */,
+				E1F134562673772000D516CA /* Data+Extenstion.swift in Sources */,
 				E1F1345326726A7400D516CA /* ScrollUpButton.swift in Sources */,
 				E1518FD4266D545300068DAB /* RecipeDetailView.swift in Sources */,
 				E1158225265D467A00241BF9 /* RecipesController.swift in Sources */,

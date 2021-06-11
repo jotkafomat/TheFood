@@ -13,7 +13,12 @@ struct RecipeViewModel {
     private let recipe: Recipe
 
     var displayBody: String {
-        recipe.body.htmlToString
+        recipe.body.replacingOccurrences(of: "</p>", with: "\n")
+            .replacingOccurrences(of: "<br>", with: "\n")
+            .replacingOccurrences(
+                of: "<[^>]+>",
+                with: "",
+                options: .regularExpression)
     }
 
     var color: Color {

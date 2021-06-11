@@ -15,7 +15,8 @@ struct ScrollUpButton: View {
     var body: some View {
         Button(
             action: {
-                withAnimation { proxy.scrollTo(tag) }},
+                withAnimation { proxy.scrollTo(tag) }
+            },
             label: {
                 Image(systemName: "arrow.up.circle")
                     .font(.title)
