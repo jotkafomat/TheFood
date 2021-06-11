@@ -10,6 +10,13 @@ import SwiftUI
 
 struct RecipeViewModel {
 
+    static let formatter: DateFormatter = {
+        let formatter = DateFormatter()
+        // formatter.
+        formatter.dateFormat = "HH:mm EEEE, d MMMM y"
+        return formatter
+    }()
+
     private let recipe: Recipe
 
     var displayBody: String {
@@ -37,6 +44,15 @@ struct RecipeViewModel {
 
     var trailText: String {
         recipe.trailText
+    }
+
+    var byline: String {
+        recipe.byline
+    }
+
+    var firstPublicationDate: String {
+        let date = recipe.firstPublicationDate
+        return RecipeViewModel.formatter.string(from: date)
     }
 
     init(recipe: Recipe) {
