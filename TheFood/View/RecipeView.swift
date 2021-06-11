@@ -10,13 +10,12 @@ import SwiftUI
 
 struct RecipeView: View {
 
-    let recipe: Recipe
-    let frameColor: Color = FrameColor.allCases.randomElement()?.color ?? .purple
+    let recipe: RecipeViewModel
 
     var body: some View {
         Rectangle()
             .aspectRatio(0.97, contentMode: .fit)
-            .foregroundColor(frameColor)
+            .foregroundColor(recipe.color)
             .overlay(
                 KFImage(recipe.image)
                     .resizable()
@@ -26,12 +25,22 @@ struct RecipeView: View {
                     .padding(4)
             )
             .overlay(
-                Text(recipe.headline)
-                    .font(.system(.title, design: .serif))
-                    .fontWeight(.semibold)
-                    .foregroundColor(.white)
-                    .background(Color.black)
-                    .padding(.bottom, 4),
+                VStack(alignment: .leading, spacing: 4.0) {
+                    Text(recipe.tag)
+                        .font(.system(.body, design: .serif))
+                        .fontWeight(.semibold)
+                        .foregroundColor(.black)
+                        .multilineTextAlignment(.leading)
+                        .padding(.leading, 4)
+                        .padding(.trailing, 4)
+                        .background(Color.white)
+                    Text(recipe.headline)
+                        .font(.system(.title, design: .serif))
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .background(Color.black)
+                        .padding(.bottom, 4)
+                },
                 alignment: .bottomLeading
             )
     }
@@ -39,16 +48,10 @@ struct RecipeView: View {
 struct RecipeView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            RecipeView(
-                recipe: Recipe(
-                    headline: "Thomasina Miers’ recipe for courgetti carbonara",
-                    thumbnail: "https://media.guim.co.uk/793f8c456f5fa74a0f8f789580fecb950a5c2cda/0_3728_5792_3475/500.jpg"))
+            RecipeView(recipe: RecipeViewModel.all[0])
                 .preferredColorScheme(.light)
                 .previewDevice("iPhone 12 Pro Max")
-            RecipeView(
-                recipe: Recipe(
-                    headline: "Thomasina Miers’ recipe for courgetti carbonara",
-                    thumbnail: "https://media.guim.co.uk/793f8c456f5fa74a0f8f789580fecb950a5c2cda/0_3728_5792_3475/500.jpg"))
+            RecipeView(recipe: RecipeViewModel.all[0] )
                 .preferredColorScheme(.dark)
                 .environment(\.sizeCategory, .accessibilityMedium)
                 .previewDevice("iPhone 12 Pro Max")

@@ -32,7 +32,6 @@ class TheFoodTests: XCTestCase {
                 expectation.fulfill()
             }
 
-        recipesController.getRecipes()
         waitForExpectations(timeout: 1.0)
     }
 
@@ -48,7 +47,6 @@ class TheFoodTests: XCTestCase {
                 expectation.fulfill()
             }
 
-        recipesController.getRecipes()
         waitForExpectations(timeout: 1.0)
     }
 
