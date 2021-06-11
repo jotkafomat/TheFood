@@ -38,6 +38,7 @@
 		E1F1345326726A7400D516CA /* ScrollUpButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F1345226726A7400D516CA /* ScrollUpButton.swift */; };
 		E1F134562673772000D516CA /* Data+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1518FC5266CCF3D00068DAB /* Data+Extenstion.swift */; };
 		E1F1345826737AB600D516CA /* AuthorBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F1345726737AB600D516CA /* AuthorBadgeView.swift */; };
+		E1F1345D2673A39100D516CA /* RecipesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F1345C2673A39100D516CA /* RecipesViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		E1F1345026726A5000D516CA /* RecipeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHeader.swift; sourceTree = "<group>"; };
 		E1F1345226726A7400D516CA /* ScrollUpButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollUpButton.swift; sourceTree = "<group>"; };
 		E1F1345726737AB600D516CA /* AuthorBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorBadgeView.swift; sourceTree = "<group>"; };
+		E1F1345C2673A39100D516CA /* RecipesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,10 +233,11 @@
 		E1D85D94265BDD5E0048CA35 /* TheFoodTests */ = {
 			isa = PBXGroup;
 			children = (
+				E1F1345A2673A34700D516CA /* RecipesViewModelTests */,
 				E1518FCB266CE58C00068DAB /* GuardianAPITest */,
 				E1518FC0266C0D5D00068DAB /* GuardiaApiResponseTest */,
-				E1D85D95265BDD5E0048CA35 /* TheFoodTests.swift */,
-				E12CA256265E95FC00FBD136 /* MockRecipesPublisher.swift */,
+				E1F134592673A2F600D516CA /* RecipesControllerTests */,
+				E1F1345B2673A35F00D516CA /* Mocks */,
 				E1D85D97265BDD5E0048CA35 /* Info.plist */,
 			);
 			path = TheFoodTests;
@@ -260,6 +263,30 @@
 				E1F1345726737AB600D516CA /* AuthorBadgeView.swift */,
 			);
 			path = RecipeDetailView;
+			sourceTree = "<group>";
+		};
+		E1F134592673A2F600D516CA /* RecipesControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1D85D95265BDD5E0048CA35 /* TheFoodTests.swift */,
+			);
+			path = RecipesControllerTests;
+			sourceTree = "<group>";
+		};
+		E1F1345A2673A34700D516CA /* RecipesViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1F1345C2673A39100D516CA /* RecipesViewModelTests.swift */,
+			);
+			path = RecipesViewModelTests;
+			sourceTree = "<group>";
+		};
+		E1F1345B2673A35F00D516CA /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E12CA256265E95FC00FBD136 /* MockRecipesPublisher.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E12CA257265E95FC00FBD136 /* MockRecipesPublisher.swift in Sources */,
+				E1F1345D2673A39100D516CA /* RecipesViewModelTests.swift in Sources */,
 				E1518FCD266CE5AE00068DAB /* GuardianAPITest.swift in Sources */,
 				E1D85D96265BDD5E0048CA35 /* TheFoodTests.swift in Sources */,
 				E1518FCF266CE68F00068DAB /* MockURLProtocol.swift in Sources */,
