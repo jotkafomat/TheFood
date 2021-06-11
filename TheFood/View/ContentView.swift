@@ -19,6 +19,7 @@ struct ContentView: View {
                         NavigationLink(
                             destination: RecipeDetailView(recipe: item)) {
                                 RecipeView(recipe: item)
+                                    .accessibility(hint: Text("Opens recipe details"))
                         }
                     }
                 }

@@ -13,16 +13,19 @@ struct AuthorBadgeView: View {
         HStack(alignment: .center) {
             Image(systemName: "person.crop.circle")
                 .font(.largeTitle)
+                .accessibility(label: Text("author's avatar"))
 
             VStack(alignment: .leading) {
                 Text(recipe.byline)
                     .font(.system(.subheadline, design: .serif))
                     .fontWeight(.medium)
                     .foregroundColor(.pink)
+                    .accessibility(label: Text("author's avatar"))
                 Text(recipe.firstPublicationDate)
                     .font(.system(.subheadline, design: .serif))
                     .fontWeight(.light)
                     .foregroundColor(.secondary)
+                    .accessibility(label: Text("Publication date \(recipe.firstPublicationDate)"))
             }
         }
     }

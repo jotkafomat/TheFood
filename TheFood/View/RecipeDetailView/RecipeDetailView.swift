@@ -21,6 +21,7 @@ struct RecipeDetailView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .id(topID)
+                        .accessibility(label: Text(recipe.headline))
                     RecipeHeader(recipe: recipe)
                         .padding(.horizontal, 6)
                     Dividers()
