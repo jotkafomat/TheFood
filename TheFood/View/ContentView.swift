@@ -22,6 +22,10 @@ struct ContentView: View {
                                     .accessibility(hint: Text("Opens recipe details"))
                         }
                     }
+                    ProgressView()
+                        .onAppear {
+                            recipesController.loadMoreRecipes()
+                        }
                 }
             }
             .navigationBarHidden(true)
