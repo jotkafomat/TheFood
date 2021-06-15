@@ -15,7 +15,7 @@ enum MockRecipesPublisher: RecipesPublisher {
     case failure
     case any
 
-    func getLatestRecipes() -> AnyPublisher<[Recipe], Never> {
+    func getLatestRecipes(currentPage: Int = 1) -> AnyPublisher<[Recipe], Never> {
         switch self {
         case .success:
             return Just(Recipe.recipes)

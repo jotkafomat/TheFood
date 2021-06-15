@@ -17,18 +17,13 @@ class GuardianAPI: RecipesPublisher {
     }()
 
     private let session: URLSession
-    private let baseUrl: URL
 
-    init(
-        session: URLSession = URLSession.shared,
-        baseUrl: URL = URL(
-            string: "https://content.guardianapis.com/search?api-key=438d1261-9311-4def-b60b-36b65295dfa0&page-size=50&tag=tone/recipes&show-fields=\(Recipe.showFields)&show-tags=series")!) {
+    init(session: URLSession = URLSession.shared) {
         self.session = session
-        self.baseUrl = baseUrl
     }
 
-    func getLatestRecipes() -> AnyPublisher<[Recipe], Never> {
-
+    func getLatestRecipes(currentPage: Int = 1) -> AnyPublisher<[Recipe], Never> {
+        let baseUrl = URL(string: "https://content.guardianapis.com/search?api-key=438d1261-9311-4def-b60b-36b65295dfa0&page-size=3&page=\(currentPage)&tag=tone/recipes&show-fields=\(Recipe.showFields)&show-tags=series")!
         var request = URLRequest(url: baseUrl)
         request.httpMethod = "GET"
         return session

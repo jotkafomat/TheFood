@@ -10,7 +10,7 @@ import Foundation
 
 struct InMemoryRecipesPublisher: RecipesPublisher {
 
-    func getLatestRecipes() -> AnyPublisher<[Recipe], Never> {
+    func getLatestRecipes(currentPage: Int) -> AnyPublisher<[Recipe], Never> {
 
         Just(Recipe.recipes).eraseToAnyPublisher()
     }

@@ -21,7 +21,7 @@ class GuardianAPITest: XCTestCase {
         configuration.protocolClasses = [MockURLProtocol.self]
         let session = URLSession(configuration: configuration)
 
-        api = GuardianAPI(session: session, baseUrl: baseUrl!)
+        api = GuardianAPI(session: session)
     }
 
     override func tearDownWithError() throws {
