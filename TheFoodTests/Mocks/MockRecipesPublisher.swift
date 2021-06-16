@@ -11,19 +11,23 @@ import Foundation
 
 enum MockRecipesPublisher: RecipesPublisher {
 
-    case success
+    case successLastPage
+    case successHasMorePages
     case failure
     case any
 
     func getLatestRecipes(currentPage: Int = 1) -> AnyPublisher<GuardianAPI.Response?, Never> {
         switch self {
-        case .success:
+        case .successLastPage:
             return Just(GuardianAPI.Response(results: Recipe.recipes, pageSize: 3, currentPage: 1, pages: 1))
             .eraseToAnyPublisher()
         case .failure:
             return Just<GuardianAPI.Response?>(nil).eraseToAnyPublisher()
         case .any:
             return Empty().eraseToAnyPublisher()
+        case .successHasMorePages:
+            return Just(GuardianAPI.Response(results: Recipe.recipes, pageSize: 3, currentPage: 1, pages: 3))
+            .eraseToAnyPublisher()
         }
     }
 }
