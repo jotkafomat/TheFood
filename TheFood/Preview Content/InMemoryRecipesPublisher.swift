@@ -10,8 +10,8 @@ import Foundation
 
 struct InMemoryRecipesPublisher: RecipesPublisher {
 
-    func getLatestRecipes(currentPage: Int) -> AnyPublisher<[Recipe], Never> {
+    func getLatestRecipes(currentPage: Int) -> AnyPublisher<GuardianAPI.Response?, Never> {
 
-        Just(Recipe.recipes).eraseToAnyPublisher()
+        Just(GuardianAPI.Response(results: Recipe.recipes, pageSize: 3, currentPage: 1, pages: 1)).eraseToAnyPublisher()
     }
 }

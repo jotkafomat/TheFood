@@ -41,7 +41,6 @@ class TheFoodTests: XCTestCase {
 
         cancellable = recipesController
             .$recipes
-            .dropFirst()
             .sink { recipes in
                 XCTAssert(recipes.isEmpty)
                 expectation.fulfill()

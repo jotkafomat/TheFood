@@ -40,7 +40,7 @@ class GuardianAPITest: XCTestCase {
         }
         let expectation = expectation(description: "recipes get loaded")
 
-        cancellable = api.getLatestRecipes().sink { recipes in
+        cancellable = api.getLatestRecipes().compactMap(\.?.results).sink { recipes in
             XCTAssertEqual(recipes.count, 5)
             XCTAssertEqual(recipes[0].headline, "Thomasina Miers’ recipe for  clotted cream drizzle cake with macerated strawberries")
             XCTAssertEqual(
@@ -56,10 +56,10 @@ class GuardianAPITest: XCTestCase {
             let response = HTTPURLResponse(url: self.baseUrl!, statusCode: 404, httpVersion: nil, headerFields: nil)!
             return (response, nil)
         }
-        let expectation = expectation(description: "recipes not loaded")
+        let expectation = expectation(description: "result not loaded")
 
-        cancellable = api.getLatestRecipes().sink { recipes in
-            XCTAssertTrue(recipes.isEmpty)
+        cancellable = api.getLatestRecipes().sink { result in
+            XCTAssertNil(result)
             expectation.fulfill()
         }
         waitForExpectations(timeout: 1)

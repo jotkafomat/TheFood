@@ -21,6 +21,7 @@ class RecipesController: ObservableObject {
         self.recipesPublisher = recipesPublisher
         recipesPublisher
             .getLatestRecipes(currentPage: currentPage)
+            .compactMap(\.?.results)
             .map { $0.map(RecipeViewModel.init) }
             .receive(on: RunLoop.main)
             .assign(to: &$recipes)
@@ -30,6 +31,7 @@ class RecipesController: ObservableObject {
         currentPage += 1
         recipesPublisher
             .getLatestRecipes(currentPage: currentPage)
+            .compactMap(\.?.results)
             .map { $0.map(RecipeViewModel.init) }
             .receive(on: RunLoop.main)
             .sink { [weak self] in

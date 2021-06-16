@@ -9,5 +9,5 @@ import Combine
 import Foundation
 
 protocol RecipesPublisher {
-    func getLatestRecipes(currentPage: Int) -> AnyPublisher<[Recipe], Never>
+    func getLatestRecipes(currentPage: Int) -> AnyPublisher<GuardianAPI.Response?, Never>
 }
