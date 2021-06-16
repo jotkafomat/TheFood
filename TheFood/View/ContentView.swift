@@ -18,9 +18,15 @@ struct ContentView: View {
                     ForEach(recipesController.recipes) { item in
                         NavigationLink(
                             destination: RecipeDetailView(recipe: item)) {
-                                RecipeView(recipe: item)
-                                    .accessibility(hint: Text("Opens recipe details"))
+                            RecipeView(recipe: item)
+                                .accessibility(hint: Text("Opens recipe details"))
                         }
+                    }
+                    if recipesController.canLoadMorePages {
+                        ProgressView()
+                            .onAppear {
+                                recipesController.loadMoreRecipes()
+                            }
                     }
                 }
             }

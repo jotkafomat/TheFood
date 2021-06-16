@@ -22,7 +22,7 @@ class TheFoodTests: XCTestCase {
 
     func testWhenPublisherSuccedToFetchRecipesArrayIsNotEmpty() throws {
         let expectation = expectation(description: "expect recipes to not be empty")
-        let recipesController = RecipesController(recipesPublisher: MockRecipesPublisher.success)
+        let recipesController = RecipesController(recipesPublisher: MockRecipesPublisher.successLastPage)
 
         cancellable = recipesController
             .$recipes
@@ -41,7 +41,6 @@ class TheFoodTests: XCTestCase {
 
         cancellable = recipesController
             .$recipes
-            .dropFirst()
             .sink { recipes in
                 XCTAssert(recipes.isEmpty)
                 expectation.fulfill()
@@ -61,5 +60,36 @@ class TheFoodTests: XCTestCase {
             }
 
         wait(for: [expectation], timeout: 1.0)
+    }
+
+    func testCanLoadMoreTrueWhenRecipesPublisherReturnsResponseWithMorePages() {
+        let expectation = expectation(description: "can load more is true")
+
+        let recipesController = RecipesController(recipesPublisher: MockRecipesPublisher.successHasMorePages)
+        cancellable = recipesController.objectWillChange
+            .delay(
+                for: RunLoop.SchedulerTimeType.Stride(0.0.nextUp),
+                scheduler: RunLoop.current)
+            .sink { _ in
+                XCTAssert(recipesController.canLoadMorePages)
+                expectation.fulfill()
+            }
+        waitForExpectations(timeout: 1.0)
+    }
+
+    func testCanLoadMoreFalseWhenRecipesPublisherReturnsResponseWithLastPage() {
+        let expectation = expectation(description: "can load more is false")
+
+        let recipesController = RecipesController(recipesPublisher: MockRecipesPublisher.successLastPage)
+
+        cancellable = recipesController.objectWillChange
+            .delay(
+                for: RunLoop.SchedulerTimeType.Stride(0.0.nextUp),
+                scheduler: RunLoop.current)
+            .sink { _ in
+                XCTAssertFalse(recipesController.canLoadMorePages)
+                expectation.fulfill()
+            }
+        waitForExpectations(timeout: 1.0)
     }
 }

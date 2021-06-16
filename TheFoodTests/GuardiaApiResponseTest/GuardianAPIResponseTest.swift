@@ -30,5 +30,7 @@ class GuardianAPIResponseTest: XCTestCase {
         XCTAssertEqual(
             recipe.thumbnail,
             URL(string: "https://media.guim.co.uk/59a765b09fa3bb95c0d60705077fdab4900d2152/0_2784_5792_3475/500.jpg")!)
+        XCTAssertEqual(response.currentPage, 1)
+        XCTAssertEqual(response.pages, 1596)
     }
 }
