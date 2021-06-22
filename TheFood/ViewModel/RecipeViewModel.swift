@@ -31,7 +31,7 @@ struct RecipeViewModel {
     var color: Color {
         recipe.frameColor.color
     }
-    var image: URL {
+    var image: URL? {
         recipe.thumbnail
     }
     var tag: String {
@@ -50,8 +50,10 @@ struct RecipeViewModel {
         recipe.byline
     }
 
-    var firstPublicationDate: String {
-        let date = recipe.firstPublicationDate
+    var firstPublicationDate: String? {
+        guard let date = recipe.firstPublicationDate else {
+            return nil
+        }
         return RecipeViewModel.formatter.string(from: date)
     }
 

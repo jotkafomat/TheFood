@@ -21,11 +21,13 @@ struct AuthorBadgeView: View {
                     .fontWeight(.medium)
                     .foregroundColor(.pink)
                     .accessibility(label: Text("author's avatar"))
-                Text(recipe.firstPublicationDate)
-                    .font(.system(.subheadline, design: .serif))
-                    .fontWeight(.light)
-                    .foregroundColor(.secondary)
-                    .accessibility(label: Text("Publication date \(recipe.firstPublicationDate)"))
+                if let date = recipe.firstPublicationDate {
+                    Text(date)
+                        .font(.system(.subheadline, design: .serif))
+                        .fontWeight(.light)
+                        .foregroundColor(.secondary)
+                        .accessibility(label: Text("Publication date \(date)"))
+                }
             }
         }
     }
