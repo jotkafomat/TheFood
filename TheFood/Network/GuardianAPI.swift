@@ -8,7 +8,7 @@
 import Combine
 import Foundation
 
-class GuardianAPI: RecipesPublisher {
+class GuardianAPI {
 
     static let decoder: JSONDecoder = {
         let decoder = JSONDecoder()
@@ -16,21 +16,9 @@ class GuardianAPI: RecipesPublisher {
         return decoder
     }()
 
-    private let session: URLSession
+    let session: URLSession
 
     init(session: URLSession = URLSession.shared) {
         self.session = session
-    }
-
-    func getLatestRecipes(currentPage: Int = 1) -> AnyPublisher<Response?, Never> {
-        let baseUrl = URL(string: "https://content.guardianapis.com/search?api-key=438d1261-9311-4def-b60b-36b65295dfa0&page-size=3&page=\(currentPage)&tag=tone/recipes&show-fields=\(Recipe.showFields)&show-tags=series")!
-        var request = URLRequest(url: baseUrl)
-        request.httpMethod = "GET"
-        return session
-            .dataTaskPublisher(for: request)
-            .map(\.data)
-            .decode(type: Response?.self, decoder: Self.decoder)
-            .replaceError(with: nil)
-            .eraseToAnyPublisher()
     }
 }
