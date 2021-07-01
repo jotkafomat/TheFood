@@ -11,6 +11,14 @@
 		E115821B265CFAD300241BF9 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E115821A265CFAD300241BF9 /* RecipeView.swift */; };
 		E115821E265D3E7700241BF9 /* FrameColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E115821D265D3E7700241BF9 /* FrameColor.swift */; };
 		E1158225265D467A00241BF9 /* RecipesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1158224265D467900241BF9 /* RecipesController.swift */; };
+		E117217D26821C2D000844D8 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E117217C26821C2D000844D8 /* SearchView.swift */; };
+		E118F99F268A184000BA5559 /* GuardianAPI + RecipesPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E118F99E268A184000BA5559 /* GuardianAPI + RecipesPublisher.swift */; };
+		E118F9A1268A1CDB00BA5559 /* RecipeFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E118F9A0268A1CDB00BA5559 /* RecipeFinder.swift */; };
+		E118F9A3268A3ABD00BA5559 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E118F9A2268A3ABD00BA5559 /* SearchController.swift */; };
+		E118F9A5268A3CE400BA5559 /* GuardianAPI- RecipeFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E118F9A4268A3CE400BA5559 /* GuardianAPI- RecipeFinder.swift */; };
+		E118F9F3268CB33400BA5559 /* ViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E118F9F2268CB33400BA5559 /* ViewHeader.swift */; };
+		E118F9F5268DA81500BA5559 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E118F9F4268DA81500BA5559 /* SearchBar.swift */; };
+		E118F9F7268DA94500BA5559 /* EmptySearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E118F9F6268DA94500BA5559 /* EmptySearchResultView.swift */; };
 		E12CA250265E833700FBD136 /* RecipesPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12CA24F265E833700FBD136 /* RecipesPublisher.swift */; };
 		E12CA255265E85D100FBD136 /* InMemoryRecipesPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12CA254265E85D100FBD136 /* InMemoryRecipesPublisher.swift */; };
 		E12CA257265E95FC00FBD136 /* MockRecipesPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12CA256265E95FC00FBD136 /* MockRecipesPublisher.swift */; };
@@ -64,6 +72,14 @@
 		E115821A265CFAD300241BF9 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		E115821D265D3E7700241BF9 /* FrameColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameColor.swift; sourceTree = "<group>"; };
 		E1158224265D467900241BF9 /* RecipesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesController.swift; sourceTree = "<group>"; };
+		E117217C26821C2D000844D8 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		E118F99E268A184000BA5559 /* GuardianAPI + RecipesPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GuardianAPI + RecipesPublisher.swift"; sourceTree = "<group>"; };
+		E118F9A0268A1CDB00BA5559 /* RecipeFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFinder.swift; sourceTree = "<group>"; };
+		E118F9A2268A3ABD00BA5559 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		E118F9A4268A3CE400BA5559 /* GuardianAPI- RecipeFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GuardianAPI- RecipeFinder.swift"; sourceTree = "<group>"; };
+		E118F9F2268CB33400BA5559 /* ViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHeader.swift; sourceTree = "<group>"; };
+		E118F9F4268DA81500BA5559 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		E118F9F6268DA94500BA5559 /* EmptySearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySearchResultView.swift; sourceTree = "<group>"; };
 		E12CA24F265E833700FBD136 /* RecipesPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesPublisher.swift; sourceTree = "<group>"; };
 		E12CA254265E85D100FBD136 /* InMemoryRecipesPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryRecipesPublisher.swift; sourceTree = "<group>"; };
 		E12CA256265E95FC00FBD136 /* MockRecipesPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRecipesPublisher.swift; sourceTree = "<group>"; };
@@ -143,6 +159,8 @@
 				E1D85D85265BDD5C0048CA35 /* ContentView.swift */,
 				E115821A265CFAD300241BF9 /* RecipeView.swift */,
 				E1F1344B267269C200D516CA /* RecipeDetailView */,
+				E118F9F9268DBF8B00BA5559 /* SearchView */,
+				E118F9F8268DBF6700BA5559 /* HelpersView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,16 +170,38 @@
 			children = (
 				E1158224265D467900241BF9 /* RecipesController.swift */,
 				E1BB13ED2671152800F013F3 /* RecipeViewModel.swift */,
+				E118F9A2268A3ABD00BA5559 /* SearchController.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E118F9F8268DBF6700BA5559 /* HelpersView */ = {
+			isa = PBXGroup;
+			children = (
+				E118F9F2268CB33400BA5559 /* ViewHeader.swift */,
+			);
+			path = HelpersView;
+			sourceTree = "<group>";
+		};
+		E118F9F9268DBF8B00BA5559 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				E117217C26821C2D000844D8 /* SearchView.swift */,
+				E118F9F4268DA81500BA5559 /* SearchBar.swift */,
+				E118F9F6268DA94500BA5559 /* EmptySearchResultView.swift */,
+			);
+			path = SearchView;
 			sourceTree = "<group>";
 		};
 		E12CA253265E852300FBD136 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				E12CA24F265E833700FBD136 /* RecipesPublisher.swift */,
-				E1518FC3266C0DD700068DAB /* GuardianAPI.swift */,
 				E1BB13E92670ED0D00F013F3 /* GuardianAPI + Response.swift */,
+				E118F99E268A184000BA5559 /* GuardianAPI + RecipesPublisher.swift */,
+				E1518FC3266C0DD700068DAB /* GuardianAPI.swift */,
+				E118F9A0268A1CDB00BA5559 /* RecipeFinder.swift */,
+				E118F9A4268A3CE400BA5559 /* GuardianAPI- RecipeFinder.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -458,8 +498,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E118F9F7268DA94500BA5559 /* EmptySearchResultView.swift in Sources */,
 				E1158218265CF8CD00241BF9 /* Recipe.swift in Sources */,
 				E1F1345826737AB600D516CA /* AuthorBadgeView.swift in Sources */,
+				E118F9A1268A1CDB00BA5559 /* RecipeFinder.swift in Sources */,
+				E118F9A3268A3ABD00BA5559 /* SearchController.swift in Sources */,
 				E1F134562673772000D516CA /* Data+Extenstion.swift in Sources */,
 				E1F1345326726A7400D516CA /* ScrollUpButton.swift in Sources */,
 				E1518FD4266D545300068DAB /* RecipeDetailView.swift in Sources */,
@@ -468,16 +511,21 @@
 				E12CA250265E833700FBD136 /* RecipesPublisher.swift in Sources */,
 				E115821E265D3E7700241BF9 /* FrameColor.swift in Sources */,
 				E1BB13E82670E24900F013F3 /* Recipe + PreviewData.swift in Sources */,
+				E117217D26821C2D000844D8 /* SearchView.swift in Sources */,
 				E1D85D86265BDD5C0048CA35 /* ContentView.swift in Sources */,
 				E115821B265CFAD300241BF9 /* RecipeView.swift in Sources */,
 				E12CA255265E85D100FBD136 /* InMemoryRecipesPublisher.swift in Sources */,
 				E1518FC4266C0DD700068DAB /* GuardianAPI.swift in Sources */,
+				E118F99F268A184000BA5559 /* GuardianAPI + RecipesPublisher.swift in Sources */,
 				E1F134602673B09F00D516CA /* String + HTML.swift in Sources */,
 				E1BB13EE2671152900F013F3 /* RecipeViewModel.swift in Sources */,
 				E1F1344D267269FD00D516CA /* RecipeBody.swift in Sources */,
+				E118F9F5268DA81500BA5559 /* SearchBar.swift in Sources */,
 				E1BB13EA2670ED0D00F013F3 /* GuardianAPI + Response.swift in Sources */,
+				E118F9A5268A3CE400BA5559 /* GuardianAPI- RecipeFinder.swift in Sources */,
 				E1F1345126726A5000D516CA /* RecipeHeader.swift in Sources */,
 				E1D85D84265BDD5C0048CA35 /* TheFoodApp.swift in Sources */,
+				E118F9F3268CB33400BA5559 /* ViewHeader.swift in Sources */,
 				E1BB13EC2670ED3A00F013F3 /* Tag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
