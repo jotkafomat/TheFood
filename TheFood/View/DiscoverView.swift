@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  DiscoverView.swift
 //  TheFood
 //
 //  Created by Krzysztof Jankowski on 24/05/2021.
@@ -7,40 +7,44 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct DiscoverView: View {
 
-    @ObservedObject var recipesController: RecipesController
+    @ObservedObject var controller: RecipesController
 
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
-                LazyVStack(spacing: 2.0) {
-                    ForEach(recipesController.recipes) { item in
+                VStack(spacing: 0.0) {
+                ViewHeader(text: "Discover")
+                    .background(Color.guardianYellowHighlightMain)
+                LazyVStack(spacing: 1.0) {
+                    ForEach(controller.recipes) { item in
                         NavigationLink(
                             destination: RecipeDetailView(recipe: item)) {
                             RecipeView(recipe: item)
                                 .accessibility(hint: Text("Opens recipe details"))
                         }
                     }
-                    if recipesController.canLoadMorePages {
+                    if controller.canLoadMorePages {
                         ProgressView()
                             .onAppear {
-                                recipesController.loadMoreRecipes()
+                                controller.loadMoreRecipes()
                             }
                     }
                 }
-            }
+                }
             .navigationBarHidden(true)
+            }
             .ignoresSafeArea()
         }
     }
 }
 
 #if DEBUG
-struct ContentView_Previews: PreviewProvider {
+struct DiscoverView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(
-            recipesController: RecipesController(
+        DiscoverView(
+            controller: RecipesController(
                 recipesPublisher: InMemoryRecipesPublisher()))
     }
 }
