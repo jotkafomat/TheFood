@@ -9,25 +9,21 @@ import SwiftUI
 
 struct SearchView: View {
 
-    @StateObject private var request = SearchController()
+    @ObservedObject var controller: SearchController
 
     var body: some View {
         NavigationView {
+            ScrollView(showsIndicators: false) {
             VStack(spacing: 0.0) {
-                ViewHeader(text: "Find")
-                    .background(Color(.yellow))
-                SearchBar(searchTerm: $request.searchTerm)
-                    .background(Color(red: 233 / 250.00, green: 233 / 250.00, blue: 78 / 250.00
-                    ))
-                if request.recipes.isEmpty {
-                    VStack {
-                        Spacer()
+                ViewHeader(text: "Search")
+                    .background(Color.guardianRedNewsMain)
+                    SearchBar(searchTerm: $controller.searchTerm)
+                        .background(Color.guardianRedNewsDark)
+                    if controller.recipes.isEmpty {
                         EmptySearchResultView()
                     }
-                }
-                ScrollView(showsIndicators: false) {
-                    LazyVStack(spacing: 2.0) {
-                        ForEach(request.recipes) { recipe in
+                    LazyVStack(spacing: 1.0) {
+                        ForEach(controller.recipes) { recipe in
                             NavigationLink(
                                 destination: RecipeDetailView(recipe: recipe)
                             ) {
@@ -35,14 +31,14 @@ struct SearchView: View {
                                     .accessibility(hint: Text("Opens recipe details"))
                             }
                         }
-                        if request.canLoadMorePages, !request.recipes.isEmpty {
+                        if controller.canLoadMorePages, !controller.recipes.isEmpty {
                             ProgressView()
                                 .onAppear {
-                                    request.loadMoreRecipes()
+                                    controller.loadMoreRecipes()
                                 }
                         }
                     }
-                }
+            }
             }
             .navigationBarHidden(true)
             .edgesIgnoringSafeArea(.top)
@@ -52,6 +48,6 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView()
+        SearchView(controller: SearchController())
     }
 }
