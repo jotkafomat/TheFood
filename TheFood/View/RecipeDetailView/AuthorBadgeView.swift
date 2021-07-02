@@ -19,7 +19,7 @@ struct AuthorBadgeView: View {
                 Text(recipe.byline)
                     .font(.system(.subheadline, design: .serif))
                     .fontWeight(.medium)
-                    .foregroundColor(.pink)
+                    .foregroundColor(.guardianRedNewsBright)
                     .accessibility(label: Text("author's avatar"))
                 if let date = recipe.firstPublicationDate {
                     Text(date)
