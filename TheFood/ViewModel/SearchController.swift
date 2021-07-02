@@ -27,10 +27,10 @@ class SearchController: ObservableObject {
             .handleEvents(receiveOutput: {[weak self] _ in
                 self?.currentPage = 0
             })
-            .filter { !$0.isEmpty }
             .handleEvents(receiveOutput: {[weak self] _ in
                 self?.recipes = [RecipeViewModel]()
             })
+            .filter { !$0.isEmpty }
             .sink { [weak self] searchTerm in
                 self?.canLoadMorePages = true
                 self?.loadMoreRecipes(by: searchTerm)
