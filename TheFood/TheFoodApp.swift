@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct TheFoodApp: App {
+
+    @StateObject var pageRouter = PageRouter()
+
     var body: some Scene {
         WindowGroup {
-            ContentView(recipesController: RecipesController())
+            MainView(pageRouter: pageRouter)
         }
     }
 }
