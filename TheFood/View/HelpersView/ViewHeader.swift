@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct ViewHeader: View {
+
     let text: String
+    let safeArea: CGFloat
+
     var body: some View {
         HStack {
             Text(text)
@@ -17,13 +20,14 @@ struct ViewHeader: View {
                 .padding(.leading)
             Spacer()
         }
-        .frame(height: 100)
+        .padding(.top, safeArea)
+        .padding(.bottom, 10)
     }
 }
 
 struct ViewHeader_Previews: PreviewProvider {
     static var previews: some View {
-        ViewHeader(text: "Search")
+        ViewHeader(text: "Search", safeArea: 0)
             .previewLayout(.sizeThatFits)
     }
 }

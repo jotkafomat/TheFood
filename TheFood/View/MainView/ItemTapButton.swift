@@ -13,6 +13,7 @@ struct ItemTabButton: View {
     @Binding var selectedPage: Page
 
     let page: Page
+    let safeArea: CGFloat
 
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
@@ -23,10 +24,10 @@ struct ItemTabButton: View {
                 .font(.system(.headline, design: .serif))
                 .fontWeight(.semibold)
                 .foregroundColor(page.color)
-                .padding(.bottom, 16)
-                .padding(.leading, 4)
+                .padding(.bottom, max(20, safeArea))
+                .padding(.leading, 15)
         }
-        .background(Color.guardianBlueBrandMain)
+        .background(selectedPage == page ? Color.guardianBlueBrandDark : Color.guardianBlueBrandMain)
         .onTapGesture {
             withAnimation {
                 selectedPage = page

@@ -10,17 +10,20 @@ import SwiftUI
 struct SearchView: View {
 
     @ObservedObject var controller: SearchController
+    let safeArea: CGFloat
 
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
-            VStack(spacing: 0.0) {
-                ViewHeader(text: "Search")
-                    .background(Color.guardianRedNewsMain)
+                VStack(spacing: 0.0) {
+                    ViewHeader(text: "Search", safeArea: safeArea)
+                        .background(Color.guardianRedNewsMain)
                     SearchBar(searchTerm: $controller.searchTerm)
                         .background(Color.guardianRedNewsDark)
                     if controller.recipes.isEmpty {
                         EmptySearchResultView()
+                            .fixedSize(horizontal: false, vertical: true)
+                            .padding()
                     }
                     LazyVStack(spacing: 1.0) {
                         ForEach(controller.recipes) { recipe in
@@ -38,7 +41,7 @@ struct SearchView: View {
                                 }
                         }
                     }
-            }
+                }
             }
             .navigationBarHidden(true)
             .edgesIgnoringSafeArea(.top)
@@ -48,6 +51,8 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView(controller: SearchController())
+        GeometryReader { geometry in
+            SearchView(controller: SearchController(), safeArea: geometry.safeAreaInsets.top)
+        }
     }
 }
