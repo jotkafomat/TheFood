@@ -12,12 +12,12 @@ struct ViewHeader: View {
     var body: some View {
         HStack {
             Text(text)
-                .font(.system(.title, design: .serif))
+                .font(.system(.largeTitle, design: .serif))
                 .fontWeight(.bold)
                 .padding(.leading)
             Spacer()
         }
-        .frame(height: 70)
+        .frame(height: 100)
     }
 }
 
