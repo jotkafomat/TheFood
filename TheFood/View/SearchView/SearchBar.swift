@@ -14,6 +14,7 @@ struct SearchBar: View {
     var body: some View {
         HStack(spacing: 0.0) {
             Spacer(minLength: 15)
+            HStack(spacing: 0.0) {
             Image(systemName: "magnifyingglass")
                 .scaledToFill()
             TextField(
@@ -22,9 +23,14 @@ struct SearchBar: View {
                 .font(.system(.body, design: .serif))
                 .autocapitalization(.none)
                 .multilineTextAlignment(.leading)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-
-            Spacer(minLength: 30)
-        }
+            }
+            .padding(4)
+            .background(
+                RoundedRectangle(
+                    cornerRadius: 10,
+                    style: .continuous)
+                    .fill(Color(.tertiarySystemBackground)))
+            Spacer(minLength: 15)
+        }.padding(.vertical, 4)
     }
 }
