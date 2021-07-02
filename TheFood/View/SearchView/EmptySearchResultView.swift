@@ -21,7 +21,9 @@ struct EmptySearchResultView: View {
                 .fontWeight(.light)
                 .multilineTextAlignment(.center)
         }
+        .padding(.top, 40)
         .foregroundColor(.secondary)
+        .background(Color.white)
     }
 }
 
