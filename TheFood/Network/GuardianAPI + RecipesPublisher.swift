@@ -26,7 +26,7 @@ extension GuardianAPI: RecipesPublisher {
         return urlComponents
     }
 
-    func getLatestRecipes(currentPage: Int = 0) -> AnyPublisher<Response?, Never> {
+    func getLatestRecipes(currentPage: Int = 1) -> AnyPublisher<Response?, Never> {
         var components = guardianAPIURLBase
         components.queryItems?.append(URLQueryItem(name: "page", value: "\(currentPage)"))
 
