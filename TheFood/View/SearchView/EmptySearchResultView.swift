@@ -23,7 +23,6 @@ struct EmptySearchResultView: View {
         }
         .padding(.top, 40)
         .foregroundColor(.secondary)
-        .background(Color.white)
     }
 }
 

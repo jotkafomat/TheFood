@@ -54,5 +54,6 @@ struct SearchView_Previews: PreviewProvider {
         GeometryReader { geometry in
             SearchView(controller: SearchController(), safeArea: geometry.safeAreaInsets.top)
         }
+        .preferredColorScheme(.dark)
     }
 }
