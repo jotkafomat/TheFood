@@ -1,5 +1,5 @@
 //
-//  TheFoodTests.swift
+//  RecipesControllerTests.swift
 //  TheFoodTests
 //
 //  Created by Krzysztof Jankowski on 24/05/2021.
@@ -9,7 +9,7 @@ import Combine
 @testable import TheFood
 import XCTest
 
-class TheFoodTests: XCTestCase {
+class RecipesControllerTests: XCTestCase {
 
     private var recipesController: RecipesController!
     private var cancellable: AnyCancellable?
@@ -20,7 +20,7 @@ class TheFoodTests: XCTestCase {
         cancellable?.cancel()
     }
 
-    func testWhenPublisherSuccedToFetchRecipesArrayIsNotEmpty() throws {
+    func testWhenPublisherSucceedsToFetchRecipesArrayIsNotEmpty() throws {
         let expectation = expectation(description: "expect recipes to not be empty")
         let recipesController = RecipesController(recipesPublisher: MockRecipesPublisher.successLastPage)
 
@@ -35,7 +35,7 @@ class TheFoodTests: XCTestCase {
         waitForExpectations(timeout: 1.0)
     }
 
-    func testWhenPublisherFailToFetchRecipesArrayIsEmpty() throws {
+    func testWhenPublisherFailsToFetchRecipesArrayIsEmpty() throws {
         let expectation = expectation(description: "expect recipes to  be empty")
         let recipesController = RecipesController(recipesPublisher: MockRecipesPublisher.failure)
 
@@ -49,7 +49,7 @@ class TheFoodTests: XCTestCase {
         waitForExpectations(timeout: 1.0)
     }
 
-    func testWhenPublisherANy() throws {
+    func testWhenRecipesControllerInitializedRecipeArrayIsEmpty() throws {
         let expectation = expectation(description: "expect recipes to  be empty")
         let recipesController = RecipesController(recipesPublisher: MockRecipesPublisher.any)
         cancellable = recipesController
@@ -62,7 +62,7 @@ class TheFoodTests: XCTestCase {
         wait(for: [expectation], timeout: 1.0)
     }
 
-    func testCanLoadMoreTrueWhenRecipesPublisherReturnsResponseWithMorePages() {
+    func testWhenRecipesPublisherReturnsResponseWithMorePagesCanLoadMoreIsTrue() {
         let expectation = expectation(description: "can load more is true")
 
         let recipesController = RecipesController(recipesPublisher: MockRecipesPublisher.successHasMorePages)
@@ -77,7 +77,7 @@ class TheFoodTests: XCTestCase {
         waitForExpectations(timeout: 1.0)
     }
 
-    func testCanLoadMoreFalseWhenRecipesPublisherReturnsResponseWithLastPage() {
+    func testWhenRecipesPublisherReturnsResponseWithLastPageCanLoadMoreIsFalse() {
         let expectation = expectation(description: "can load more is false")
 
         let recipesController = RecipesController(recipesPublisher: MockRecipesPublisher.successLastPage)
