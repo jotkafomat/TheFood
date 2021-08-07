@@ -12,7 +12,6 @@ struct RecipeViewModel {
 
     static let formatter: DateFormatter = {
         let formatter = DateFormatter()
-        // formatter.
         formatter.dateFormat = "HH:mm EEEE, d MMMM y"
         return formatter
     }()
