@@ -1,5 +1,5 @@
 //
-//  RecipesViewModelTests.swift
+//  RecipeViewModelTests.swift
 //  TheFoodTests
 //
 //  Created by Krzysztof Jankowski on 11/06/2021.
@@ -9,7 +9,7 @@ import SwiftUI
 @testable import TheFood
 import XCTest
 
-class RecipesViewModelTests: XCTestCase {
+class RecipeViewModelTests: XCTestCase {
     private var recipeViewModel: RecipeViewModel!
 
     override func setUpWithError() throws {
@@ -38,6 +38,27 @@ class RecipesViewModelTests: XCTestCase {
 
     func testFirstPublicationDate() throws {
         XCTAssertEqual(recipeViewModel.firstPublicationDate, "16:16 Thursday, 10 June 2021")
+    }
+
+    func testWhenThereIsNoPublicationDateItShowsNil() {
+        // arrange
+        let recipe = Recipe(
+            id: "Pasta",
+            firstPublicationDate: nil,
+            headline: "Pasta",
+            thumbnail: nil,
+            trailText: "Pasta",
+            byline: "Pachel",
+            body: "Body",
+            tags: [Tag(series: "Tag")])
+
+        let recipeViewModel = RecipeViewModel(recipe: recipe)
+
+        // act
+        let result = recipeViewModel.firstPublicationDate
+
+        // assert
+        XCTAssertNil(result)
     }
 
     func testHeadline() throws {
