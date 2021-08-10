@@ -40,4 +40,8 @@ extension Color {
         Color("guardianBrownCultureBright")
     static let guardianBrownCulturePastel =
         Color("guardianBrownCulturePastel")
+    static let guardianYellowAndWhite =
+        Color("guardianYellowAndWhite")
+    static let guardianRedAndWhite =
+        Color("guardianRedAndWhite")
 }

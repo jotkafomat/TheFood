@@ -31,6 +31,7 @@ struct TheFoodApp: App {
 
         controlStates.forEach {
             UIBarButtonItem.appearance().setTitleTextAttributes([.font: font], for: $0)
+            UIBarButtonItem.appearance().tintColor = UIColor(Color.guardianBlueSportMain)
         }
     }
 }

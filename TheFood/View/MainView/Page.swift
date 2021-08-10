@@ -24,9 +24,9 @@ enum Page {
     var color: Color {
         switch self {
         case .discovery:
-            return .guardianYellowHighlightMain
+            return .guardianYellowAndWhite
         case .search:
-            return .guardianRedNewsBright
+            return .guardianRedAndWhite
         }
     }
 }
