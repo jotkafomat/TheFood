@@ -23,8 +23,7 @@ struct RecipeViewModel {
             .replacingOccurrences(of: "<br>", with: "\n")
             .replacingOccurrences(
                 of: "<[^>]+>",
-                with: "",
-                options: .regularExpression)
+                with: "")
     }
 
     var color: Color {

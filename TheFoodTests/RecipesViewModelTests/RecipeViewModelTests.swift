@@ -76,4 +76,26 @@ class RecipeViewModelTests: XCTestCase {
     func testId() throws {
         XCTAssertEqual(recipeViewModel.id, "food/2021/may/24/thomasina-miers-recipe-courgetti-carbonara")
     }
+
+    func testBody() throws {
+
+        // arrange
+        let recipe = Recipe(
+            id: "Pasta",
+            firstPublicationDate: nil,
+            headline: "Pasta",
+            thumbnail: nil,
+            trailText: "Pasta",
+            byline: "Pachel",
+            body: "</p>,<br>,<[^>]+>",
+            tags: [Tag(series: "Tag")])
+
+        let recipeViewModel = RecipeViewModel(recipe: recipe)
+
+        // act
+        let result = recipeViewModel.displayBody
+
+        // assert
+        XCTAssertEqual(result, "\n,\n,")
+    }
 }
