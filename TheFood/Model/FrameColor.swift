@@ -9,24 +9,26 @@ import Foundation
 import SwiftUI
 
 enum FrameColor: CaseIterable {
-    case brown1, brown2, brown3, brown4, brown5, brown6, brown7
+    case frame1, frame2, frame3, frame4, frame5, frame6, frame7, frame8
 
     var color: Color {
         switch self {
-        case .brown1:
-            return Color("choclate-3")
-        case .brown2:
-            return Color("choclate")
-        case .brown3:
-            return Color("choclate-1")
-        case .brown4:
-            return Color("choclate-2")
-        case .brown5:
-            return Color("choclate-3")
-        case .brown6:
-            return Color("choclate-4")
-        case .brown7:
-            return Color("choclate-5")
+        case .frame1:
+            return Color.guardianOrangeOpinionMain
+        case .frame2:
+            return Color.guardianOrangeOpinionDark
+        case .frame3:
+            return Color.guardianOrangeOpinionBright
+        case .frame4:
+            return Color.guardianOrangeOpinionPastel
+        case .frame5:
+            return Color.guardianBrownCultureMain
+        case .frame6:
+            return Color.guardianBrownCultureDark
+        case .frame7:
+            return Color.guardianBrownCultureBright
+        case .frame8:
+            return Color.guardianBrownCulturePastel
         }
     }
 }

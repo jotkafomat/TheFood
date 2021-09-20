@@ -12,7 +12,6 @@ struct RecipeViewModel {
 
     static let formatter: DateFormatter = {
         let formatter = DateFormatter()
-        // formatter.
         formatter.dateFormat = "HH:mm EEEE, d MMMM y"
         return formatter
     }()
@@ -20,18 +19,22 @@ struct RecipeViewModel {
     private let recipe: Recipe
 
     var displayBody: String {
-        recipe.body.replacingOccurrences(of: "</p>", with: "\n")
+        recipe.body
+            .replacingOccurrences(of: "</p>", with: "")
+            .replacingOccurrences(of: "<p>", with: "")
             .replacingOccurrences(of: "<br>", with: "\n")
-            .replacingOccurrences(
-                of: "<[^>]+>",
-                with: "",
-                options: .regularExpression)
+            .replacingOccurrences(of: "<[^>]+>",with: "")
+            .replacingOccurrences(of: "<h2>", with: "")
+            .replacingOccurrences(of: "</h2>", with: "")
+            .replacingOccurrences(of: "<strong>", with: "")
+            .replacingOccurrences(of: "</strong>", with: "")
+
     }
 
     var color: Color {
         recipe.frameColor.color
     }
-    var image: URL {
+    var image: URL? {
         recipe.thumbnail
     }
     var tag: String {
@@ -50,8 +53,10 @@ struct RecipeViewModel {
         recipe.byline
     }
 
-    var firstPublicationDate: String {
-        let date = recipe.firstPublicationDate
+    var firstPublicationDate: String? {
+        guard let date = recipe.firstPublicationDate else {
+            return nil
+        }
         return RecipeViewModel.formatter.string(from: date)
     }
 

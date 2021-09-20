@@ -12,9 +12,9 @@ struct Recipe {
     static let showFields: String = FieldsKeys.allCases.map { $0.rawValue }.joined(separator: ",")
 
     let id: String
-    let firstPublicationDate: Date
+    let firstPublicationDate: Date?
     let headline: String
-    let thumbnail: URL
+    let thumbnail: URL?
     let trailText: String
     let byline: String
     let body: String
@@ -37,11 +37,11 @@ extension Recipe: Decodable {
         tags = try container.decode([Tag].self, forKey: .tags)
         let fieldsContainer = try container.nestedContainer(keyedBy: FieldsKeys.self, forKey: .fields)
         headline = try fieldsContainer.decode(String.self, forKey: .headline)
-        thumbnail = try fieldsContainer.decode(URL.self, forKey: .thumbnail)
+        thumbnail = try fieldsContainer.decodeIfPresent(URL.self, forKey: .thumbnail)
         trailText = try fieldsContainer.decode(String.self, forKey: .trailText)
         byline = try fieldsContainer.decode(String.self, forKey: .byline)
         body = try fieldsContainer.decode(String.self, forKey: .body)
-        firstPublicationDate = try fieldsContainer.decode(Date.self, forKey: .firstPublicationDate)
+        firstPublicationDate = try fieldsContainer.decodeIfPresent(Date.self, forKey: .firstPublicationDate)
     }
 }
 

@@ -64,4 +64,24 @@ class GuardianAPITest: XCTestCase {
         }
         waitForExpectations(timeout: 1)
     }
+
+    func test_GuardianAPI_whenSearchRecipesSuccess() {
+        MockURLProtocol.requestHandler = { _ in
+            let response = HTTPURLResponse(url: self.baseUrl!, statusCode: 200, httpVersion: nil, headerFields: nil)!
+            let data = try? Data(from: "exampleResponse")
+
+            return (response, data)
+        }
+        let expectation = expectation(description: "recipes get loaded")
+
+        cancellable = api.searchRecipes(by: "dupa").compactMap(\.?.results).sink { recipes in
+            XCTAssertEqual(recipes.count, 5)
+            XCTAssertEqual(recipes[0].headline, "Thomasina Miers’ recipe for  clotted cream drizzle cake with macerated strawberries")
+            XCTAssertEqual(
+                recipes[0].thumbnail,
+                URL(string: "https://media.guim.co.uk/59a765b09fa3bb95c0d60705077fdab4900d2152/0_2784_5792_3475/500.jpg")!)
+            expectation.fulfill()
+        }
+        waitForExpectations(timeout: 1)
+    }
 }
