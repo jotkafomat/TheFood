@@ -19,11 +19,16 @@ struct RecipeViewModel {
     private let recipe: Recipe
 
     var displayBody: String {
-        recipe.body.replacingOccurrences(of: "</p>", with: "\n")
+        recipe.body
+            .replacingOccurrences(of: "</p>", with: "")
+            .replacingOccurrences(of: "<p>", with: "")
             .replacingOccurrences(of: "<br>", with: "\n")
-            .replacingOccurrences(
-                of: "<[^>]+>",
-                with: "")
+            .replacingOccurrences(of: "<[^>]+>",with: "")
+            .replacingOccurrences(of: "<h2>", with: "")
+            .replacingOccurrences(of: "</h2>", with: "")
+            .replacingOccurrences(of: "<strong>", with: "")
+            .replacingOccurrences(of: "</strong>", with: "")
+
     }
 
     var color: Color {
